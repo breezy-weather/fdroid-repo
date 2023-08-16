@@ -10,4 +10,4 @@ https://julianfairfax.github.io/fdroid-repo/fdroid/repo?fingerprint=83ABB548CAA6
 
 You can also scan this QR code and add the link to your F-Droid client:
 
-![F-Droid repo QR code](https://julianfairfax.github.io/fdroid-repo/fdroid/repo/icons/icon.png)
+![F-Droid repo QR code](https://julianfairfax.github.io/fdroid-repo/fdroid/repo/index.png)

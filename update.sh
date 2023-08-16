@@ -16,7 +16,6 @@ for github_repo in ${github_repos[@]}; do
 	repo=$(echo $github_repo | sed 's|:.*||')
 	wget -q -O latest https://api.github.com/repos/$repo/releases/latest
 	release=$(cat latest | grep tag_name | sed 's/.*tag_name\":\ \"//' | sed 's/\",//')
-	changelog="$(cat latest | sed -z 's/"\n}//g' | grep body | sed 's/  "body": "//' | sed 's/",//' | sed 's/\\r//g' | sed 's/\\n/  \n/g')"
 	urls=$(cat latest | grep browser_download_url | sed 's/      "browser_download_url": "//' | sed 's/"//')
 	url=$(echo "$urls" | grep .apk$ | grep -v debug | grep -v arm64-v8a | grep -v armeabi-v7a | grep -v x86 | grep -v x86_64)
 	asset=$(echo $url | sed 's/.*\///')
@@ -64,22 +63,13 @@ Summary: \"$(echo $description | cut -c 1-80)\"
 WebSite: https://github.com/$repo
 Changelog: https://github.com/$repo/releases" | tee -a fdroid/metadata/$id.yml
 
-	mkdir -p fdroid/metadata/$id/en-US/changelogs
-
-	echo "$changelog" | tee fdroid/metadata/$id/en-US/changelogs/$version.txt
-
 	wget -q -O releases https://api.github.com/repos/$repo/releases
-	changelog="$(cat releases | grep -m1 '"prerelease": true,' -B31 -A224 | sed -z 's/"\n}//g' | grep body | sed 's/  "body": "//' | sed 's/",//' | sed 's/\\r//g' | sed 's/\\n/  \n/g')"
 	urls=$(cat releases | grep -m1 '"prerelease": true,' -B31 -A224 | grep browser_download_url | sed 's/      "browser_download_url": "//' | sed 's/"//')
 	url=$(echo "$urls" | grep .apk$ | grep -v debug | grep -v arm64-v8a | grep -v armeabi-v7a | grep -v x86 | grep -v x86_64)
 	asset=$(echo $url | sed 's/.*\///')
 
 	if [[ $(cat releases | grep -m1 '"prerelease": true,' -B31 -A224 | grep created_at -m1 | sed 's/.* "//' | sed 's/T.*//') -ge $(cat latest | grep created_at -m1 | sed 's/.* "//' | sed 's/T.*//') ]]; then
 		wget -q -O fdroid/repo/$asset $url
-
-		mkdir -p fdroid/metadata/$id/en-US/changelogs
-
-		echo "$changelog" | tee fdroid/metadata/$id/en-US/changelogs/$version.txt
 	fi
 
 	rm latest
@@ -87,6 +77,40 @@ Changelog: https://github.com/$repo/releases" | tee -a fdroid/metadata/$id.yml
 	rm releases
 
 	rm repo
+
+	mkdir -p fdroid/metadata/$id
+
+	git clone https://github.com/repos/$repo
+
+	mv $name/fastlane/metadata/android/* fdroid/metadata/$id/
+
+	rm -rf $name
+
+	for folder in fdroid/metadata/$id/*; do
+		if [[ -d $folder/images ]]; then
+			mv $folder/images/phoneScreenshots/* $folder/
+
+			if [[ -f $folder/images/icon.png ]]; then
+				mkdir -p fdroid/repo/icons
+
+				mv $folder/images/icon.png fdroid/repo/icons/$id.$version.png
+			fi
+
+			rm -rf $folder/images
+		fi
+
+		if [[ -d $folder/changelogs ]]; then
+			mv $folder/changelogs/default.txt $folder/changelogs/$version.txt
+		fi
+
+		if [[ -f $folder/full_description.txt ]]; then
+			mv $folder/full_description.txt $folder/description.txt
+		fi
+
+		if [[ -f $folder/short_description.txt ]]; then
+			mv $folder/short_description.txt $folder/summary.txt
+		fi
+	done
 done
 
 if [[ ! -f fdroid/repo/index-v1.json ]]; then

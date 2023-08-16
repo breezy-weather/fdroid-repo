@@ -88,7 +88,13 @@ Changelog: https://github.com/$repo/releases" | tee -a fdroid/metadata/$id.yml
 
 	for folder in fdroid/metadata/$id/*; do
 		if [[ -d $folder/images ]]; then
-			mv $folder/images/phoneScreenshots/* $folder/
+			if [[ -d $folder/images/phoneScreenshots ]]; then
+				mkdir -p fdroid/repo/$id/$(echo $folder | sed 's/.*\///')/phoneScreenshots
+
+				mv $folder/images/phoneScreenshots/* fdroid/repo/$id/$(echo $folder | sed 's/.*\///')/phoneScreenshots/
+
+				rm -rf $folder/images
+			fi
 
 			if [[ -f $folder/images/icon.png ]]; then
 				mkdir -p fdroid/repo/icons

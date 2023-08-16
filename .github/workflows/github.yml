@@ -1,0 +1,45 @@
+name: Build
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '.github/workflows/github.yml'
+      - 'build.sh'
+      - 'update.sh'
+  workflow_dispatch:
+  schedule:
+  - cron: "0 0 * * *"
+
+jobs:
+  build:
+    name: "Build"
+    runs-on: ubuntu-latest
+    container:
+      image: debian:latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Build
+        run: |
+          apt update
+          apt install aapt curl git fdroidserver -y
+          mkdir -p fdroid/repo
+          echo "$KEYSTORE" | base64 -d - > fdroid/keystore.keystore
+          echo "$CONFIG" | base64 -d - > fdroid/config.yml
+          chmod +x update.sh
+          ./update.sh
+          rm fdroid/keystore.keystore
+          rm fdroid/config.yml
+          mkdir public
+          mv fdroid public/
+        env:
+          KEYSTORE: ${{ secrets.KEYSTORE }}
+          CONFIG: ${{ secrets.CONFIG }}
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.PERSONAL_TOKEN }}
+          publish_dir: public

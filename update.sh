@@ -95,9 +95,9 @@ Changelog: https://github.com/$repo/releases" | tee -a fdroid/metadata/$id.yml
 			fi
 
 			if [[ -f $folder/images/icon.png ]]; then
-				mkdir -p fdroid/repo/icons
+				mkdir -p fdroid/repo/$id/$(echo $folder | sed 's/.*\///')
 
-				mv $folder/images/icon.png fdroid/repo/icons/$id.$version.png
+				mv $folder/images/icon.png fdroid/repo/$id/$(echo $folder | sed 's/.*\///')/
 			fi
 
 			rm -rf $folder/images

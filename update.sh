@@ -80,7 +80,7 @@ Changelog: https://github.com/$repo/releases" | tee -a fdroid/metadata/$id.yml
 
 	mkdir -p fdroid/metadata/$id
 
-	git clone https://github.com/repos/$repo
+	git clone https://github.com/$repo
 
 	mv $name/fastlane/metadata/android/* fdroid/metadata/$id/
 

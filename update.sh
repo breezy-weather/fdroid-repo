@@ -68,7 +68,7 @@ Changelog: https://github.com/$repo/releases" | tee -a fdroid/metadata/$id.yml
 	url=$(echo "$urls" | grep .apk$ | grep -v debug | grep -v arm64-v8a | grep -v armeabi-v7a | grep -v x86 | grep -v x86_64)
 	asset=$(echo $url | sed 's/.*\///')
 
-	if [[ $(cat releases | grep -m1 '"prerelease": true,' -B31 -A224 | grep created_at -m1 | sed 's/.* "//' | sed 's/T.*//') -ge $(cat latest | grep created_at -m1 | sed 's/.* "//' | sed 's/T.*//') ]]; then
+	if [[ $(cat releases | grep -m1 '"prerelease": true,' -B31 -A224 | grep created_at -m1 | sed 's/.* "//' | sed 's/T.*//' | sed 's/-//g') -ge $(cat latest | grep created_at -m1 | sed 's/.* "//' | sed 's/T.*//' | sed 's/-//g') ]]; then
 		wget -q -O fdroid/repo/$asset $url
 	fi
 
@@ -82,9 +82,9 @@ Changelog: https://github.com/$repo/releases" | tee -a fdroid/metadata/$id.yml
 
 	git clone https://github.com/$repo
 
-	mv $name/fastlane/metadata/android/* fdroid/metadata/$id/
+	mv $(echo $repo | sed 's/.*\///')/fastlane/metadata/android/* fdroid/metadata/$id/
 
-	rm -rf $name
+	rm -rf $(echo $repo | sed 's/.*\///')
 
 	for folder in fdroid/metadata/$id/*; do
 		if [[ -d $folder/images ]]; then

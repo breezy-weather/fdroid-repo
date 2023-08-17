@@ -79,12 +79,9 @@ Categories:
     - $(echo $github_repo | sed 's|.*:||')
 CurrentVersion: $release
 CurrentVersionCode: $version
-Description: |
-    $(cat fdroid/metadata/$id/en-US/description.txt)
 IssueTracker: https://github.com/$repo/issues
 Name: $name
 SourceCode: https://github.com/$repo
-Summary: \"$(cat fdroid/metadata/$id/en-US/summary.txt)\"
 WebSite: https://github.com/$repo
 Changelog: https://github.com/$repo/releases" | tee -a fdroid/metadata/$id.yml
 

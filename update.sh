@@ -11,8 +11,6 @@ if [[ ! -d fdroid/repo ]]; then
 fi
 
 for github_repo in ${github_repos[@]}; do
-	description=""
-
 	repo=$(echo $github_repo | sed 's|:.*||')
 	wget -q -O latest https://api.github.com/repos/$repo/releases/latest
 	release=$(cat latest | grep tag_name | sed 's/.*tag_name\":\ \"//' | sed 's/\",//')
@@ -20,22 +18,11 @@ for github_repo in ${github_repos[@]}; do
 	url=$(echo "$urls" | grep .apk$ | grep -v debug | grep -v arm64-v8a | grep -v armeabi-v7a | grep -v x86 | grep -v x86_64)
 	asset=$(echo $url | sed 's/.*\///')
 
-	wget -q -O repo https://api.github.com/repos/$repo
-	if [[ ! $(cat repo | grep description -m 1 | sed 's/  "description": "//' | sed 's/",//') == *null* ]]; then
-		description=$(cat repo | grep description -m 1 | sed 's/  "description": "//' | sed 's/",//')
-	fi
-
 	wget -q -O fdroid/repo/$asset $url
 
 	name=$(aapt dump badging fdroid/repo/$asset | grep application-label: | sed "s/application-label:'//" | sed "s/'.*//")
 	version=$(aapt dump badging fdroid/repo/$asset | grep versionCode | sed "s/.*versionCode='//" | sed "s/'.*//")
 	id=$(aapt dump badging fdroid/repo/$asset | grep package:\ name | sed "s/package: name='//" | sed "s/'.*//")
-
-	if [[ -z "$description" ]]; then
-		description="$name"
-	else
-		description="$description"
-	fi
 
 	for anti_feature in ${anti_features[@]}; do
 		if [[ $(echo $anti_feature | sed 's|:.*||') == $repo  ]]; then
@@ -48,35 +35,6 @@ for github_repo in ${github_repos[@]}; do
 			fi
 		fi
 	done
-
-	echo "AuthorName: $(echo $github_repo | sed 's|/.*||')
-Categories:
-    - $(echo $github_repo | sed 's|.*:||')
-CurrentVersion: $release
-CurrentVersionCode: $version
-Description: |
-    $description
-IssueTracker: https://github.com/$repo/issues
-Name: $name
-SourceCode: https://github.com/$repo
-Summary: \"$(echo $description | cut -c 1-80)\"
-WebSite: https://github.com/$repo
-Changelog: https://github.com/$repo/releases" | tee -a fdroid/metadata/$id.yml
-
-	wget -q -O releases https://api.github.com/repos/$repo/releases
-	urls=$(cat releases | grep -m1 '"prerelease": true,' -B31 -A224 | grep browser_download_url | sed 's/      "browser_download_url": "//' | sed 's/"//')
-	url=$(echo "$urls" | grep .apk$ | grep -v debug | grep -v arm64-v8a | grep -v armeabi-v7a | grep -v x86 | grep -v x86_64)
-	asset=$(echo $url | sed 's/.*\///')
-
-	if [[ $(cat releases | grep -m1 '"prerelease": true,' -B31 -A224 | grep created_at -m1 | sed 's/.* "//' | sed 's/T.*//' | sed 's/-//g') -ge $(cat latest | grep created_at -m1 | sed 's/.* "//' | sed 's/T.*//' | sed 's/-//g') ]]; then
-		wget -q -O fdroid/repo/$asset $url
-	fi
-
-	rm latest
-
-	rm releases
-
-	rm repo
 
 	mkdir -p fdroid/metadata/$id
 
@@ -115,6 +73,33 @@ Changelog: https://github.com/$repo/releases" | tee -a fdroid/metadata/$id.yml
 			mv $folder/short_description.txt $folder/summary.txt
 		fi
 	done
+
+	echo "AuthorName: $(echo $github_repo | sed 's|/.*||')
+Categories:
+    - $(echo $github_repo | sed 's|.*:||')
+CurrentVersion: $release
+CurrentVersionCode: $version
+Description: |
+    $(cat fdroid/metadata/$id/en-US/description.txt)
+IssueTracker: https://github.com/$repo/issues
+Name: $name
+SourceCode: https://github.com/$repo
+Summary: \"$(cat fdroid/metadata/$id/en-US/summary.txt)\"
+WebSite: https://github.com/$repo
+Changelog: https://github.com/$repo/releases" | tee -a fdroid/metadata/$id.yml
+
+	wget -q -O releases https://api.github.com/repos/$repo/releases
+	urls=$(cat releases | grep -m1 '"prerelease": true,' -B31 -A224 | grep browser_download_url | sed 's/      "browser_download_url": "//' | sed 's/"//')
+	url=$(echo "$urls" | grep .apk$ | grep -v debug | grep -v arm64-v8a | grep -v armeabi-v7a | grep -v x86 | grep -v x86_64)
+	asset=$(echo $url | sed 's/.*\///')
+
+	if [[ $(cat releases | grep -m1 '"prerelease": true,' -B31 -A224 | grep created_at -m1 | sed 's/.* "//' | sed 's/T.*//' | sed 's/-//g') -ge $(cat latest | grep created_at -m1 | sed 's/.* "//' | sed 's/T.*//' | sed 's/-//g') ]]; then
+		wget -q -O fdroid/repo/$asset $url
+	fi
+
+	rm latest
+
+	rm releases
 done
 
 if [[ ! -f fdroid/repo/index-v1.json ]]; then

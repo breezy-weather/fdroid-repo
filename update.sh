@@ -80,6 +80,7 @@ Categories:
 CurrentVersion: $release
 CurrentVersionCode: $version
 IssueTracker: https://github.com/$repo/issues
+License: LGPL-3.0-only
 Name: $name
 SourceCode: https://github.com/$repo
 WebSite: https://github.com/$repo

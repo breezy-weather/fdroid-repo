@@ -1,0 +1,25 @@
+{
+  "/etc/issue.net": "Debian GNU/Linux 12",
+  "antiFeatures": {},
+  "apksigner": "/usr/bin/apksigner",
+  "archivePolicy0": [],
+  "commandLine": [
+    "/usr/bin/fdroid update",
+    "--pretty",
+    "--delete-unknown"
+  ],
+  "disabled": [],
+  "endTimestamp": 1693039422679,
+  "failedBuilds": {},
+  "jarsigner": "/usr/lib/jvm/default-java/bin/jarsigner",
+  "keytool": "/usr/lib/jvm/default-java/bin/keytool",
+  "needsUpdate": [],
+  "noPackages": [
+    "org.breezyweather"
+  ],
+  "noUpdateCheck": [
+    "org.breezyweather"
+  ],
+  "startTimestamp": 1693039417000,
+  "subcommand": "update"
+}

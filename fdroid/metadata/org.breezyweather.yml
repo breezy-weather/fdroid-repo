@@ -1,0 +1,10 @@
+AuthorName: breezy-weather
+Categories:
+    - Internet
+CurrentVersion: v4.6.4-beta
+CurrentVersionCode: 40604
+IssueTracker: https://github.com/breezy-weather/breezy-weather/issues
+Name: Breezy Weather
+SourceCode: https://github.com/breezy-weather/breezy-weather
+WebSite: https://github.com/breezy-weather/breezy-weather
+Changelog: https://github.com/breezy-weather/breezy-weather/releases

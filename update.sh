@@ -1,6 +1,7 @@
 #!/bin/bash
 
 declare -a github_repos=("breezy-weather/breezy-weather:Internet")
+declare anti_features=("breezy-weather/breezy-weather:NonFreeAssets")
 
 if [[ ! -d fdroid/metadata ]]; then
 	mkdir -p fdroid/metadata

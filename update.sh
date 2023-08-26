@@ -100,7 +100,7 @@ Changelog: https://github.com/$repo/releases" | tee -a fdroid/metadata/$id.yml
 done
 
 if [[ ! -f fdroid/repo/index-v1.json ]]; then
-	echo "{\"repo\": {\"timestamp\": $(date +%s%N | cut -b1-13), \"version\": 20000, \"name\": \"Breezy Weather\", \"icon\": \"icon.png\", \"address\": \"https://julianfairfax.github.io/fdroid-repo/fdroid/repo?fingerprint=83ABB548CAA6F311CE3591DDCA466B65213FD0541352502702B1908F0C84206D\", \"description\": \"The F-Droid repository for Breezy Weather\"}, \"requests\": {\"install\": [], \"uninstall\": []}, \"apps\": [], \"packages\": {}}" | tee fdroid/repo/index-v1.json
+	echo "{\"repo\": {\"timestamp\": $(date +%s%N | cut -b1-13), \"version\": 20000, \"name\": \"Breezy Weather\", \"icon\": \"icon.png\", \"address\": \"https://breezy-weather.github.io/fdroid-repo/fdroid/repo?fingerprint=3480A7BB2A296D8F98CB90D2309199B5B9519C1B31978DBCD877ADB102AF35EE\", \"description\": \"The F-Droid repository for Breezy Weather\"}, \"requests\": {\"install\": [], \"uninstall\": []}, \"apps\": [], \"packages\": {}}" | tee fdroid/repo/index-v1.json
 fi
 
 cd fdroid

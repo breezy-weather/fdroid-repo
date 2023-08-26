@@ -5,9 +5,9 @@ The F-Droid repo for Breezy Weather
 Copy this link and add it to your F-Droid client:
 
 ```
-https://julianfairfax.github.io/fdroid-repo/fdroid/repo?fingerprint=83ABB548CAA6F311CE3591DDCA466B65213FD0541352502702B1908F0C84206D
+https://breezy-weather.github.io/fdroid-repo/fdroid/repo?fingerprint=3480A7BB2A296D8F98CB90D2309199B5B9519C1B31978DBCD877ADB102AF35EE
 ```
 
 You can also scan this QR code and add the link to your F-Droid client:
 
-![F-Droid repo QR code](https://julianfairfax.github.io/fdroid-repo/fdroid/repo/index.png)
+![F-Droid repo QR code](https://breezy-weather.github.io/fdroid-repo/fdroid/repo/index.png)

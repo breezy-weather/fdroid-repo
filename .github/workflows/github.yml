@@ -35,8 +35,8 @@ jobs:
           mkdir public
           mv fdroid public/
         env:
-          KEYSTORE: ${{ secrets.KEYSTORE }}
-          CONFIG: ${{ secrets.CONFIG }}
+          KEYSTORE: ${{ secrets.KEYSTORE_FDROID }}
+          CONFIG: ${{ secrets.CONFIG_FDROID }}
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

@@ -85,7 +85,10 @@ License: LGPL-3.0-only
 Name: $name
 SourceCode: https://github.com/$repo
 WebSite: https://github.com/$repo
-Changelog: https://github.com/$repo/releases" | tee -a fdroid/metadata/$id.yml
+Changelog: https://github.com/$repo/blob/main/CHANGELOG.md
+Translation: https://hosted.weblate.org/projects/breezy-weather/breezy-weather-android/#information
+
+AllowedAPKSigningKeys: 29d435f70aa9aec3c1faff7f7ffa6e15785088d87f06ecfcab9c3cc62dc269d8" | tee -a fdroid/metadata/$id.yml
 
 	wget -q -O releases https://api.github.com/repos/$repo/releases
 	urls=$(cat releases | grep -m1 '"prerelease": true,' -B31 -A224 | grep browser_download_url | sed 's/      "browser_download_url": "//' | sed 's/"//')

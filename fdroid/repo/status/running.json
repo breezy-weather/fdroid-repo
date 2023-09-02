@@ -15,7 +15,7 @@
     "--delete-unknown"
   ],
   "disabled": [],
-  "endTimestamp": 1693616796686,
+  "endTimestamp": 1693672637760,
   "failedBuilds": {},
   "jarsigner": "/usr/lib/jvm/default-java/bin/jarsigner",
   "keytool": "/usr/lib/jvm/default-java/bin/keytool",
@@ -26,6 +26,6 @@
   "noUpdateCheck": [
     "org.breezyweather"
   ],
-  "startTimestamp": 1693616790000,
+  "startTimestamp": 1693672631000,
   "subcommand": "update"
 }

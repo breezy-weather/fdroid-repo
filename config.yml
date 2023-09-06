@@ -1,0 +1,16 @@
+sdk_path: /usr/lib/android-sdk
+
+repo_url: https://breezy-weather.github.io/fdroid-repo/fdroid/repo
+repo_name: Breezy Weather
+repo_description: >-
+   The F-Droid repository for Breezy Weather
+
+repo_keyalias: KEYALIAS
+
+keystore: keystore.keystore
+
+keystorepass: PASS
+
+keypass: PASS
+
+keydname: KEYDNAME

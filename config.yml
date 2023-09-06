@@ -9,8 +9,8 @@ repo_keyalias: KEYALIAS
 
 keystore: keystore.keystore
 
-keystorepass: "PASS"
+keystorepass: "KEYSTORE_PASS"
 
-keypass: "PASS"
+keypass: "KEY_PASS"
 
 keydname: KEYDNAME

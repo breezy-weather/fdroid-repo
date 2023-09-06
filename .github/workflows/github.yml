@@ -27,7 +27,11 @@ jobs:
           apt install aapt curl git fdroidserver -y
           mkdir -p fdroid/repo
           echo "$KEYSTORE" | base64 -d - > fdroid/keystore.keystore
-          echo "$CONFIG" | base64 -d - > fdroid/config.yml
+          mv config.yml fdroid/config.yml
+          sed -i "s/KEYALIAS/$KEYALIAS/" fdroid/config.yml
+          sed -i "s/KEYSTORE_PASS/$KEYSTORE_PASS/" fdroid/config.yml
+          sed -i "s/KEY_PASS/$KEY_PASS/" fdroid/config.yml
+          sed -i "s/KEYDNAME/$KEYDNAME/" fdroid/config.yml
           chmod +x update.sh
           ./update.sh
           rm fdroid/keystore.keystore
@@ -36,7 +40,10 @@ jobs:
           mv fdroid public/
         env:
           KEYSTORE: ${{ secrets.KEYSTORE_FDROID }}
-          CONFIG: ${{ secrets.CONFIG_FDROID }}
+          KEYALIAS: ${{ secrets.ALIAS_FDROID }}
+          KEYSTORE_PASS: ${{ secrets.KEY_STORE_PASSWORD_FDROID }}
+          KEY_PASS: ${{ secrets.KEY_PASSWORD_FDROID }}
+          KEYDNAME: ${{ secrets.KEYDNAME_FDROID }}
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

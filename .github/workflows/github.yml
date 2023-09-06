@@ -29,8 +29,8 @@ jobs:
           echo "$KEYSTORE" | base64 -d - > fdroid/keystore.keystore
           mv config.yml fdroid/config.yml
           sed -i "s/KEYALIAS/$KEYALIAS/" fdroid/config.yml
-          sed -i "s/KEYSTORE_PASS/$KEYSTORE_PASS/" fdroid/config.yml
-          sed -i "s/KEY_PASS/$KEY_PASS/" fdroid/config.yml
+          sed -i "s/KEYSTORE_PASS/$(echo "$KEYSTORE_PASS" | sed -e "s/\&/\\\&/")/" fdroid/config.yml
+          sed -i "s/KEY_PASS/$(echo "$KEY_PASS" | sed -e "s/\&/\\\&/")/" fdroid/config.yml
           sed -i "s/KEYDNAME/$KEYDNAME/" fdroid/config.yml
           chmod +x update.sh
           ./update.sh

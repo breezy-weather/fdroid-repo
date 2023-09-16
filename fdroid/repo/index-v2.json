@@ -14,18 +14,18 @@
       }
     },
     "address": "https://breezy-weather.github.io/fdroid-repo/fdroid/repo",
-    "timestamp": 1694826399000
+    "timestamp": 1694851138000
   },
   "packages": {
     "org.breezyweather": {
       "metadata": {
-        "added": 1694826399000,
+        "added": 1694851138000,
         "categories": [
           "Internet"
         ],
         "changelog": "https://github.com/breezy-weather/breezy-weather/blob/main/CHANGELOG.md",
         "issueTracker": "https://github.com/breezy-weather/breezy-weather/issues",
-        "lastUpdated": 1694826399000,
+        "lastUpdated": 1694851138000,
         "license": "LGPL-3.0-only",
         "sourceCode": "https://github.com/breezy-weather/breezy-weather",
         "translation": "https://hosted.weblate.org/projects/breezy-weather/breezy-weather-android/#information",
@@ -122,12 +122,12 @@
         "preferredSigner": "29d435f70aa9aec3c1faff7f7ffa6e15785088d87f06ecfcab9c3cc62dc269d8"
       },
       "versions": {
-        "f34a519800cc4b02822ebe10aea38d6dd7378668729de02e8b303ebc3adc9f1e": {
-          "added": 1694826399000,
+        "62b318a014e189eedc22714ebff6889182cb8dab2e8f6dc4057fd6cdb537768f": {
+          "added": 1694851138000,
           "file": {
-            "name": "/breezy-weather-v4.6.5-beta.apk",
-            "sha256": "f34a519800cc4b02822ebe10aea38d6dd7378668729de02e8b303ebc3adc9f1e",
-            "size": 11179168
+            "name": "/breezy-weather-v4.6.6-beta.apk",
+            "sha256": "62b318a014e189eedc22714ebff6889182cb8dab2e8f6dc4057fd6cdb537768f",
+            "size": 11224394
           },
           "manifest": {
             "nativecode": [
@@ -136,19 +136,8 @@
               "x86",
               "x86_64"
             ],
-            "versionName": "4.6.5-beta",
-            "versionCode": 40605,
-            "features": [
-              {
-                "name": "android.software.live_wallpaper"
-              },
-              {
-                "name": "android.hardware.location.gps"
-              },
-              {
-                "name": "android.hardware.location.network"
-              }
-            ],
+            "versionName": "4.6.6-beta",
+            "versionCode": 40606,
             "usesSdk": {
               "minSdkVersion": 21,
               "targetSdkVersion": 33

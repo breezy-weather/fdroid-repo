@@ -1,6 +1,6 @@
 {
   "repo": {
-    "timestamp": 1694826399000,
+    "timestamp": 1694851138000,
     "version": 20002,
     "name": "Breezy Weather",
     "icon": "icon.png",
@@ -24,17 +24,17 @@
         "Internet"
       ],
       "changelog": "https://github.com/breezy-weather/breezy-weather/blob/main/CHANGELOG.md",
-      "suggestedVersionName": "v4.6.5-beta",
-      "suggestedVersionCode": "40605",
+      "suggestedVersionName": "v4.6.6-beta",
+      "suggestedVersionCode": "40606",
       "issueTracker": "https://github.com/breezy-weather/breezy-weather/issues",
       "license": "LGPL-3.0-only",
       "name": "Breezy Weather",
       "sourceCode": "https://github.com/breezy-weather/breezy-weather",
       "translation": "https://hosted.weblate.org/projects/breezy-weather/breezy-weather-android/#information",
       "webSite": "https://github.com/breezy-weather/breezy-weather",
-      "added": 1694826399000,
+      "added": 1694851138000,
       "packageName": "org.breezyweather",
-      "lastUpdated": 1694826399000,
+      "lastUpdated": 1694851138000,
       "localized": {
         "en-US": {
           "description": "Breezy Weather is a free and open-source Android weather app, forked from Geometric Weather, adding new features, providers, modernizing code, fixing bugs, updating dependencies for security reasons, etc., while keep having a smooth user and developer experience in mind.\n\nIn the app, you'll find:<ul>\n<li>Real-time weather conditions (Temperature, Feels like, Wind, UV index, Humidity, Dew point, Atmospheric pressure, Visibility, Cloud cover, Ceiling)</li>\n<li>Daily and hourly forecasts up to 16 days (Temperature, Air quality, Wind, UV index, Precipitation)</li>\n<li>Precipitation in the next hour</li>\n<li>Air quality, allergen and ephemeris information</li>\n<li>Severe weather and precipitation alerts</li></ul>\n\nThe app has a strong focus on design, with a simple, clean UX, smooth animations, and Material Design all over, plus lots of customizability:<ul>\n<li>Automatic dark mode</li>\n<li>Custom icon packs</li>\n<li>Large selection of home screen widgets for at-a-glance information</li>\n<li>Live wallpaper</li></ul>\n\nCurrent supported weather providers:<ul>\n<li>Open-Meteo</li>\n<li>AccuWeather</li>\n<li>MET Norway</li>\n<li>OpenWeatherMap</li>\n<li>M\u00e9t\u00e9o France</li>\n<li>Mixed China providers</li></ul>\n\nThis app requests a number of permissions; some required, some optional.\n\nRequired permissions:<ul>\n<li>Network (ACCESS_NETWORK_STATE, ACCESS_WIFI_STATE, INTERNET): Allows the app to fetch weather data from providers over the Internet</li>\n<li>Background updates (RECEIVE_BOOT_COMPLETED, WAKE_LOCK, FOREGROUND_SERVICE, SET_ALARM): Allows the app to refresh weather data in the background</li>\n<li>Tile (EXPAND_STATUS_BAR): Allows the app to launch itself from Quick Settings</li>\n</ul>\n\nOptional permissions: <ul>\n<li>Location (ACCESS_COARSE_LOCATION, ACCESS_FINE_LOCATION, ACCESS_BACKGROUND_LOCATION): Allows the app to show weather in your current location</li>\n<li>Storage (READ_EXTERNAL_STORAGE, WRITE_EXTERNAL_STORAGE): Allows the app to set the live weather wallpaper and/or widgets on some devices</li>\n<li>Ignore battery optimizations (REQUEST_IGNORE_BATTERY_OPTIMIZATIONS): Prevents the app from being killed in the background. Potentially more reliable method for fetching background weather data on some devices</li>\n<li>Read phone state (READ_PHONE_STATE): Required by an app dependency: not actually used, but can't be removed. It's okay to never enable this.</li>\n</ul>",
@@ -72,14 +72,9 @@
   "packages": {
     "org.breezyweather": [
       {
-        "added": 1694826399000,
-        "apkName": "breezy-weather-v4.6.5-beta.apk",
-        "features": [
-          "android.software.live_wallpaper",
-          "android.hardware.location.gps",
-          "android.hardware.location.network"
-        ],
-        "hash": "f34a519800cc4b02822ebe10aea38d6dd7378668729de02e8b303ebc3adc9f1e",
+        "added": 1694851138000,
+        "apkName": "breezy-weather-v4.6.6-beta.apk",
+        "hash": "62b318a014e189eedc22714ebff6889182cb8dab2e8f6dc4057fd6cdb537768f",
         "hashType": "sha256",
         "minSdkVersion": 21,
         "nativecode": [
@@ -91,7 +86,7 @@
         "packageName": "org.breezyweather",
         "sig": "688802048f64d92faa490892a23d802c",
         "signer": "29d435f70aa9aec3c1faff7f7ffa6e15785088d87f06ecfcab9c3cc62dc269d8",
-        "size": 11179168,
+        "size": 11224394,
         "targetSdkVersion": 33,
         "uses-permission": [
           [
@@ -155,8 +150,8 @@
             null
           ]
         ],
-        "versionCode": 40605,
-        "versionName": "4.6.5-beta"
+        "versionCode": 40606,
+        "versionName": "4.6.6-beta"
       }
     ]
   }

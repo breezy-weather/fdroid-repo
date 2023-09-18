@@ -1,8 +1,8 @@
 #!/bin/bash
 
 declare -a github_repos=("breezy-weather/breezy-weather:Internet")
-declare anti_features=("breezy-weather/breezy-weather:NonFreeAssets")
-declare fastlane_repos=("breezy-weather/breezy-weather")
+declare -a anti_features=("breezy-weather/breezy-weather:NonFreeAssets")
+declare -a fastlane_repos=("breezy-weather/breezy-weather")
 
 if [[ ! -d fdroid/metadata ]]; then
 	mkdir -p fdroid/metadata

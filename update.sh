@@ -22,7 +22,6 @@ for github_repo in ${github_repos[@]}; do
 	asset=$(echo $url | sed 's/.*\///')
 
 	wget -q -O fdroid/repo/$asset $url
-	touch -d $(cat latest | grep published_at | sed 's/.*published_at\":\ \"//' | sed 's/T.*//' | sed 's/-//g') fdroid/repo/$asset
 
 	name=$(aapt dump badging fdroid/repo/$asset | grep application-label: | sed "s/application-label:'//" | sed "s/'.*//")
 	version=$(aapt dump badging fdroid/repo/$asset | grep versionCode | sed "s/.*versionCode='//" | sed "s/'.*//")
@@ -102,7 +101,6 @@ AllowedAPKSigningKeys: 29d435f70aa9aec3c1faff7f7ffa6e15785088d87f06ecfcab9c3cc62
 
 			if [[ $(cat releases | grep -m1 '"prerelease": true,' -B31 -A224 | grep created_at -m1 | sed 's/.* "//' | sed 's/T.*//' | sed 's/-//g') -ge $(cat latest | grep created_at -m1 | sed 's/.* "//' | sed 's/T.*//' | sed 's/-//g') ]]; then
 				wget -q -O fdroid/repo/$asset $url
-				touch -d $(cat releases | grep published_at | sed 's/.*published_at\":\ \"//' | sed 's/T.*//' | sed 's/-//g') fdroid/repo/$asset
 			fi
 
 			rm latest
@@ -146,10 +144,6 @@ Changelog: https://github.com/$repo/releases" | tee -a fdroid/metadata/$id.yml
 
 	rm latest
 done
-
-if [[ ! -f fdroid/repo/index-v1.json ]]; then
-	echo "{\"repo\": {\"timestamp\": $(date +%s%N | cut -b1-13), \"version\": 20000, \"name\": \"Breezy Weather\", \"icon\": \"icon.png\", \"address\": \"https://breezy-weather.github.io/fdroid-repo/fdroid/repo\", \"description\": \"The F-Droid repository for Breezy Weather\"}, \"requests\": {\"install\": [], \"uninstall\": []}, \"apps\": [], \"packages\": {}}" | tee fdroid/repo/index-v1.json
-fi
 
 cd fdroid
 

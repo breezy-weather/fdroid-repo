@@ -12,10 +12,11 @@
   "commandLine": [
     "/usr/bin/fdroid update",
     "--pretty",
-    "--delete-unknown"
+    "--delete-unknown",
+    "--use-date-from-apk"
   ],
   "disabled": [],
-  "endTimestamp": 1695055270707,
+  "endTimestamp": 1695055519216,
   "failedBuilds": {},
   "jarsigner": "/usr/lib/jvm/default-java/bin/jarsigner",
   "keytool": "/usr/lib/jvm/default-java/bin/keytool",
@@ -26,6 +27,6 @@
   "noUpdateCheck": [
     "org.breezyweather"
   ],
-  "startTimestamp": 1695055265000,
+  "startTimestamp": 1695055514000,
   "subcommand": "update"
 }

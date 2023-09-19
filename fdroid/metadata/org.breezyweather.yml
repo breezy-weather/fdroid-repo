@@ -3,8 +3,8 @@ AntiFeatures:
 AuthorName: breezy-weather
 Categories:
     - Internet
-CurrentVersion: v4.6.6-beta
-CurrentVersionCode: 40606
+CurrentVersion: v4.6.7-beta
+CurrentVersionCode: 40607
 IssueTracker: https://github.com/breezy-weather/breezy-weather/issues
 License: LGPL-3.0-only
 Name: Breezy Weather

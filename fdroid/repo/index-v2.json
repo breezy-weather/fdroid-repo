@@ -14,18 +14,18 @@
       }
     },
     "address": "https://breezy-weather.github.io/fdroid-repo/fdroid/repo",
-    "timestamp": 1696900055000
+    "timestamp": 1696919768000
   },
   "packages": {
     "org.breezyweather": {
       "metadata": {
-        "added": 1695124215000,
+        "added": 1696919206000,
         "categories": [
           "Internet"
         ],
         "changelog": "https://github.com/breezy-weather/breezy-weather/blob/main/CHANGELOG.md",
         "issueTracker": "https://github.com/breezy-weather/breezy-weather/issues",
-        "lastUpdated": 1695450407000,
+        "lastUpdated": 1696919206000,
         "license": "LGPL-3.0-only",
         "sourceCode": "https://github.com/breezy-weather/breezy-weather",
         "translation": "https://hosted.weblate.org/projects/breezy-weather/breezy-weather-android/#information",
@@ -122,12 +122,12 @@
         "preferredSigner": "29d435f70aa9aec3c1faff7f7ffa6e15785088d87f06ecfcab9c3cc62dc269d8"
       },
       "versions": {
-        "74a66e85afca1dac921b3dc064ef901c84cdba8d4fa633f14e0cda847ba11ba5": {
-          "added": 1695450407000,
+        "f31bbd8e5e22144fa7f432d500f810fc607af3f5c2043d73a7dac81a815fc9c4": {
+          "added": 1696919206000,
           "file": {
-            "name": "/breezy-weather-v4.6.8-beta.apk",
-            "sha256": "74a66e85afca1dac921b3dc064ef901c84cdba8d4fa633f14e0cda847ba11ba5",
-            "size": 11224338
+            "name": "/breezy-weather-v4.6.9-beta.apk",
+            "sha256": "f31bbd8e5e22144fa7f432d500f810fc607af3f5c2043d73a7dac81a815fc9c4",
+            "size": 11310613
           },
           "manifest": {
             "nativecode": [
@@ -136,88 +136,8 @@
               "x86",
               "x86_64"
             ],
-            "versionName": "4.6.8-beta",
-            "versionCode": 40608,
-            "usesSdk": {
-              "minSdkVersion": 21,
-              "targetSdkVersion": 33
-            },
-            "signer": {
-              "sha256": [
-                "29d435f70aa9aec3c1faff7f7ffa6e15785088d87f06ecfcab9c3cc62dc269d8"
-              ]
-            },
-            "usesPermission": [
-              {
-                "name": "android.permission.ACCESS_FINE_LOCATION"
-              },
-              {
-                "name": "android.permission.ACCESS_COARSE_LOCATION"
-              },
-              {
-                "name": "android.permission.ACCESS_BACKGROUND_LOCATION"
-              },
-              {
-                "name": "android.permission.READ_EXTERNAL_STORAGE"
-              },
-              {
-                "name": "android.permission.FOREGROUND_SERVICE"
-              },
-              {
-                "name": "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"
-              },
-              {
-                "name": "android.permission.ACCESS_NETWORK_STATE"
-              },
-              {
-                "name": "android.permission.ACCESS_WIFI_STATE"
-              },
-              {
-                "name": "android.permission.INTERNET"
-              },
-              {
-                "name": "android.permission.RECEIVE_BOOT_COMPLETED"
-              },
-              {
-                "name": "com.android.alarm.permission.SET_ALARM"
-              },
-              {
-                "name": "android.permission.EXPAND_STATUS_BAR"
-              },
-              {
-                "name": "android.permission.POST_NOTIFICATIONS"
-              },
-              {
-                "name": "android.permission.WAKE_LOCK"
-              },
-              {
-                "name": "org.breezyweather.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-              }
-            ]
-          },
-          "antiFeatures": {
-            "NonFreeAssets": {}
-          },
-          "releaseChannels": [
-            "Beta"
-          ]
-        },
-        "7ab34f02f246a4b71ff7bab02d354ce9581bfe15e77dc324caf03c997c2b9364": {
-          "added": 1695124215000,
-          "file": {
-            "name": "/breezy-weather-v4.6.7-beta.apk",
-            "sha256": "7ab34f02f246a4b71ff7bab02d354ce9581bfe15e77dc324caf03c997c2b9364",
-            "size": 11224394
-          },
-          "manifest": {
-            "nativecode": [
-              "arm64-v8a",
-              "armeabi-v7a",
-              "x86",
-              "x86_64"
-            ],
-            "versionName": "4.6.7-beta",
-            "versionCode": 40607,
+            "versionName": "4.6.9-beta",
+            "versionCode": 40609,
             "usesSdk": {
               "minSdkVersion": 21,
               "targetSdkVersion": 33

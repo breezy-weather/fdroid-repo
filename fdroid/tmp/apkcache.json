@@ -1,8 +1,8 @@
 {
   "METADATA_VERSION": 20002,
   "allow_disabled_algorithms": false,
-  "breezy-weather-v4.6.7-beta.apk": {
-    "hash": "7ab34f02f246a4b71ff7bab02d354ce9581bfe15e77dc324caf03c997c2b9364",
+  "breezy-weather-v4.6.9-beta.apk": {
+    "hash": "f31bbd8e5e22144fa7f432d500f810fc607af3f5c2043d73a7dac81a815fc9c4",
     "hashType": "sha256",
     "uses-permission": [
       [
@@ -72,9 +72,9 @@
     "icons": {},
     "antiFeatures": [],
     "packageName": "org.breezyweather",
-    "versionCode": 40607,
+    "versionCode": 40609,
     "name": "Breezy Weather",
-    "versionName": "4.6.7-beta",
+    "versionName": "4.6.9-beta",
     "minSdkVersion": 21,
     "targetSdkVersion": 33,
     "nativecode": [
@@ -85,96 +85,8 @@
     ],
     "sig": "688802048f64d92faa490892a23d802c",
     "signer": "29d435f70aa9aec3c1faff7f7ffa6e15785088d87f06ecfcab9c3cc62dc269d8",
-    "size": 11224394,
-    "apkName": "breezy-weather-v4.6.7-beta.apk",
-    "added": 1695124215.0
-  },
-  "breezy-weather-v4.6.8-beta.apk": {
-    "hash": "74a66e85afca1dac921b3dc064ef901c84cdba8d4fa633f14e0cda847ba11ba5",
-    "hashType": "sha256",
-    "uses-permission": [
-      [
-        "android.permission.ACCESS_FINE_LOCATION",
-        null
-      ],
-      [
-        "android.permission.ACCESS_COARSE_LOCATION",
-        null
-      ],
-      [
-        "android.permission.ACCESS_BACKGROUND_LOCATION",
-        null
-      ],
-      [
-        "android.permission.READ_EXTERNAL_STORAGE",
-        null
-      ],
-      [
-        "android.permission.FOREGROUND_SERVICE",
-        null
-      ],
-      [
-        "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS",
-        null
-      ],
-      [
-        "android.permission.ACCESS_NETWORK_STATE",
-        null
-      ],
-      [
-        "android.permission.ACCESS_WIFI_STATE",
-        null
-      ],
-      [
-        "android.permission.INTERNET",
-        null
-      ],
-      [
-        "android.permission.RECEIVE_BOOT_COMPLETED",
-        null
-      ],
-      [
-        "com.android.alarm.permission.SET_ALARM",
-        null
-      ],
-      [
-        "android.permission.EXPAND_STATUS_BAR",
-        null
-      ],
-      [
-        "android.permission.POST_NOTIFICATIONS",
-        null
-      ],
-      [
-        "android.permission.WAKE_LOCK",
-        null
-      ],
-      [
-        "org.breezyweather.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
-        null
-      ]
-    ],
-    "uses-permission-sdk-23": [],
-    "features": [],
-    "icons_src": {},
-    "icons": {},
-    "antiFeatures": [],
-    "packageName": "org.breezyweather",
-    "versionCode": 40608,
-    "name": "Breezy Weather",
-    "versionName": "4.6.8-beta",
-    "minSdkVersion": 21,
-    "targetSdkVersion": 33,
-    "nativecode": [
-      "arm64-v8a",
-      "armeabi-v7a",
-      "x86",
-      "x86_64"
-    ],
-    "sig": "688802048f64d92faa490892a23d802c",
-    "signer": "29d435f70aa9aec3c1faff7f7ffa6e15785088d87f06ecfcab9c3cc62dc269d8",
-    "size": 11224338,
-    "apkName": "breezy-weather-v4.6.8-beta.apk",
-    "added": 1695450407.0
+    "size": 11310613,
+    "apkName": "breezy-weather-v4.6.9-beta.apk",
+    "added": 1696919206.0
   }
 }

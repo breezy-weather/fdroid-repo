@@ -106,21 +106,24 @@ AllowedAPKSigningKeys: 29d435f70aa9aec3c1faff7f7ffa6e15785088d87f06ecfcab9c3cc62
 			rm latest
 
 			rm releases
+		fi
+	done
+
+	if [[ ! -f fdroid/metadata/$id.yml ]]; then
+		description=""
+
+		wget -q -O repo https://api.github.com/repos/$repo
+		if [[ ! $(cat repo | grep description -m 1 | sed 's/  "description": "//' | sed 's/",//') == *null* ]]; then
+			description=$(cat repo | grep description -m 1 | sed 's/  "description": "//' | sed 's/",//')
+		fi
+
+		if [[ -z "$description" ]]; then
+			description="$name"
 		else
-			description=""
-
-			wget -q -O repo https://api.github.com/repos/$repo
-			if [[ ! $(cat repo | grep description -m 1 | sed 's/  "description": "//' | sed 's/",//') == *null* ]]; then
-				description=$(cat repo | grep description -m 1 | sed 's/  "description": "//' | sed 's/",//')
-			fi
-
-			if [[ -z "$description" ]]; then
-				description="$name"
-			else
 				description="$description"
-			fi
+		fi
 
-			echo "AuthorName: $(echo $github_repo | sed 's|/.*||')
+		echo "AuthorName: $(echo $github_repo | sed 's|/.*||')
 Categories:
     - $(echo $github_repo | sed 's|.*:||')
 CurrentVersion: $release
@@ -134,13 +137,12 @@ Summary: \"$(echo $description | cut -c 1-80)\"
 WebSite: https://github.com/$repo
 Changelog: https://github.com/$repo/releases" | tee -a fdroid/metadata/$id.yml
 
-			mkdir -p fdroid/metadata/$id/en-US/changelogs
+		mkdir -p fdroid/metadata/$id/en-US/changelogs
 
-			echo "$changelog" | tee fdroid/metadata/$id/en-US/changelogs/$version.txt
+		echo "$changelog" | tee fdroid/metadata/$id/en-US/changelogs/$version.txt
 
-			rm repo
-		fi
-	done
+		rm repo
+	fi
 
 	rm latest
 done

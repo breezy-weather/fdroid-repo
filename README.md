@@ -11,3 +11,6 @@ https://breezy-weather.github.io/fdroid-repo/fdroid/repo?fingerprint=3480A7BB2A2
 You can also scan this QR code and add the link to your F-Droid client:
 
 ![F-Droid repo QR code](https://breezy-weather.github.io/fdroid-repo/fdroid/repo/index.png)
+
+## Licensing information
+This repository is based on [Julian's F-Droid repo](https://gitlab.com/julianfairfax/fdroid-repo).

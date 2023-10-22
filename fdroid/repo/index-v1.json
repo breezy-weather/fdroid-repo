@@ -1,6 +1,6 @@
 {
   "repo": {
-    "timestamp": 1697937150000,
+    "timestamp": 1697958259000,
     "version": 20002,
     "name": "Breezy Weather",
     "icon": "icon.png",
@@ -24,15 +24,15 @@
         "Internet"
       ],
       "changelog": "https://github.com/breezy-weather/breezy-weather/blob/main/CHANGELOG.md",
-      "suggestedVersionName": "v4.6.9-beta",
-      "suggestedVersionCode": "40609",
+      "suggestedVersionName": "v4.6.10-beta",
+      "suggestedVersionCode": "40610",
       "issueTracker": "https://github.com/breezy-weather/breezy-weather/issues",
       "license": "LGPL-3.0-only",
       "name": "Breezy Weather",
       "sourceCode": "https://github.com/breezy-weather/breezy-weather",
       "translation": "https://hosted.weblate.org/projects/breezy-weather/breezy-weather-android/#information",
       "webSite": "https://github.com/breezy-weather/breezy-weather",
-      "added": 1696919206000,
+      "added": 1697817932000,
       "packageName": "org.breezyweather",
       "lastUpdated": 1697817932000,
       "localized": {
@@ -152,88 +152,6 @@
         ],
         "versionCode": 40610,
         "versionName": "4.6.10-beta"
-      },
-      {
-        "added": 1696919206000,
-        "apkName": "breezy-weather-v4.6.9-beta.apk",
-        "hash": "f31bbd8e5e22144fa7f432d500f810fc607af3f5c2043d73a7dac81a815fc9c4",
-        "hashType": "sha256",
-        "minSdkVersion": 21,
-        "nativecode": [
-          "arm64-v8a",
-          "armeabi-v7a",
-          "x86",
-          "x86_64"
-        ],
-        "packageName": "org.breezyweather",
-        "sig": "688802048f64d92faa490892a23d802c",
-        "signer": "29d435f70aa9aec3c1faff7f7ffa6e15785088d87f06ecfcab9c3cc62dc269d8",
-        "size": 11310613,
-        "targetSdkVersion": 33,
-        "uses-permission": [
-          [
-            "android.permission.ACCESS_FINE_LOCATION",
-            null
-          ],
-          [
-            "android.permission.ACCESS_COARSE_LOCATION",
-            null
-          ],
-          [
-            "android.permission.ACCESS_BACKGROUND_LOCATION",
-            null
-          ],
-          [
-            "android.permission.READ_EXTERNAL_STORAGE",
-            null
-          ],
-          [
-            "android.permission.FOREGROUND_SERVICE",
-            null
-          ],
-          [
-            "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS",
-            null
-          ],
-          [
-            "android.permission.ACCESS_NETWORK_STATE",
-            null
-          ],
-          [
-            "android.permission.ACCESS_WIFI_STATE",
-            null
-          ],
-          [
-            "android.permission.INTERNET",
-            null
-          ],
-          [
-            "android.permission.RECEIVE_BOOT_COMPLETED",
-            null
-          ],
-          [
-            "com.android.alarm.permission.SET_ALARM",
-            null
-          ],
-          [
-            "android.permission.EXPAND_STATUS_BAR",
-            null
-          ],
-          [
-            "android.permission.POST_NOTIFICATIONS",
-            null
-          ],
-          [
-            "android.permission.WAKE_LOCK",
-            null
-          ],
-          [
-            "org.breezyweather.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
-            null
-          ]
-        ],
-        "versionCode": 40609,
-        "versionName": "4.6.9-beta"
       }
     ]
   }

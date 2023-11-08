@@ -1,8 +1,8 @@
 {
   "METADATA_VERSION": 20002,
   "allow_disabled_algorithms": false,
-  "breezy-weather-v4.6.10-beta.apk": {
-    "hash": "a9c94578cb1e641b56369c83b21c6d575cf9fc668830ac02b3bcf3d6fb3fa365",
+  "breezy-weather-v4.6.11-beta.apk": {
+    "hash": "7db9209142aa91534cecf61743e2b422f44983395de60cf28085e104482979c3",
     "hashType": "sha256",
     "uses-permission": [
       [
@@ -72,9 +72,9 @@
     "icons": {},
     "antiFeatures": [],
     "packageName": "org.breezyweather",
-    "versionCode": 40610,
+    "versionCode": 40611,
     "name": "Breezy Weather",
-    "versionName": "4.6.10-beta",
+    "versionName": "4.6.11-beta",
     "minSdkVersion": 21,
     "targetSdkVersion": 33,
     "nativecode": [
@@ -85,8 +85,8 @@
     ],
     "sig": "688802048f64d92faa490892a23d802c",
     "signer": "29d435f70aa9aec3c1faff7f7ffa6e15785088d87f06ecfcab9c3cc62dc269d8",
-    "size": 11359765,
-    "apkName": "breezy-weather-v4.6.10-beta.apk",
-    "added": 1697817932.0
+    "size": 11159051,
+    "apkName": "breezy-weather-v4.6.11-beta.apk",
+    "added": 1699460348.0
   }
 }

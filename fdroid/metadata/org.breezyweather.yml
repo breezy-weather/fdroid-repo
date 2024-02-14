@@ -1,5 +1,5 @@
 AntiFeatures:
-    - NonFreeAssets,
+    - NonFreeAssets
     - NonFreeDep
 AuthorName: breezy-weather
 Categories:

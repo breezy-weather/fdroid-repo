@@ -5,11 +5,6 @@
       "apps": [
         "org.breezyweather"
       ]
-    },
-    "NonFreeDep": {
-      "apps": [
-        "org.breezyweather"
-      ]
     }
   },
   "apksigner": "/usr/bin/apksigner",
@@ -21,7 +16,7 @@
     "--use-date-from-apk"
   ],
   "disabled": [],
-  "endTimestamp": 1709372962724,
+  "endTimestamp": 1709375372147,
   "failedBuilds": {},
   "jarsigner": "/usr/lib/jvm/default-java/bin/jarsigner",
   "keytool": "/usr/lib/jvm/default-java/bin/keytool",
@@ -32,6 +27,6 @@
   "noUpdateCheck": [
     "org.breezyweather"
   ],
-  "startTimestamp": 1709372958000,
+  "startTimestamp": 1709375368000,
   "subcommand": "update"
 }

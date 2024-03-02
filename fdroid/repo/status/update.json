@@ -21,7 +21,7 @@
     "--use-date-from-apk"
   ],
   "disabled": [],
-  "endTimestamp": 1709341502715,
+  "endTimestamp": 1709372962724,
   "failedBuilds": {},
   "jarsigner": "/usr/lib/jvm/default-java/bin/jarsigner",
   "keytool": "/usr/lib/jvm/default-java/bin/keytool",
@@ -32,6 +32,6 @@
   "noUpdateCheck": [
     "org.breezyweather"
   ],
-  "startTimestamp": 1709341497000,
+  "startTimestamp": 1709372958000,
   "subcommand": "update"
 }

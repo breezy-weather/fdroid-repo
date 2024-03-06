@@ -1,4 +1,4 @@
-Breezy Weather is a free and open-source Android weather app, forked from Geometric Weather, adding new features, providers, modernizing code, fixing bugs, updating dependencies for security reasons, etc., while keep having a smooth user and developer experience in mind.
+Breezy Weather is a free and open-source Android weather app, forked from Geometric Weather, adding new features, sources, modernizing code, fixing bugs, updating dependencies for security reasons, etc., while keep having a smooth user and developer experience in mind.
 
 In the app, you'll find:<ul>
 <li>Real-time weather conditions (Temperature, Feels like, Wind, UV index, Humidity, Dew point, Atmospheric pressure, Visibility, Cloud cover, Ceiling)</li>
@@ -14,7 +14,7 @@ The app has a strong focus on design, with a simple, clean UX, smooth animations
 <li>Large selection of home screen widgets for at-a-glance information</li>
 <li>Live wallpaper</li></ul>
 
-Current supported weather providers:<ul>
+Current supported weather sources:<ul>
 <li>Open-Meteo</li>
 <li>AccuWeather</li>
 <li>MET Norway</li>
@@ -23,7 +23,7 @@ Current supported weather providers:<ul>
 <li>HERE</li>
 <li>Météo France</li>
 <li>Danmarks Meteorologiske Institut (DMI)</li>
-<li>Mixed China providers</li>
+<li>Mixed China sources</li>
 <li>National Weather Service (NWS)</li>
 <li>Bright Sky (DWD)</li>
 <li>Environment and Climate Change Canada</li>
@@ -34,7 +34,7 @@ Current supported weather providers:<ul>
 This app requests a number of permissions; some required, some optional.
 
 Required permissions:<ul>
-<li>Network (ACCESS_NETWORK_STATE, ACCESS_WIFI_STATE, INTERNET): Allows the app to fetch weather data from providers over the Internet</li>
+<li>Network (ACCESS_NETWORK_STATE, ACCESS_WIFI_STATE, INTERNET): Allows the app to fetch weather data from sources over the Internet</li>
 <li>Background updates (RECEIVE_BOOT_COMPLETED, WAKE_LOCK, FOREGROUND_SERVICE, SET_ALARM): Allows the app to refresh weather data in the background</li>
 <li>Tile (EXPAND_STATUS_BAR): Allows the app to launch itself from Quick Settings</li>
 </ul>

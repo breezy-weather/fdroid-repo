@@ -14,7 +14,7 @@
       }
     },
     "address": "https://breezy-weather.github.io/fdroid-repo/fdroid/repo",
-    "timestamp": 1709687207000
+    "timestamp": 1709745737000
   },
   "packages": {
     "org.breezyweather": {
@@ -34,66 +34,218 @@
           "phone": {
             "en-US": [
               {
-                "name": "/org.breezyweather/en-US/phoneScreenshots/01.png",
-                "sha256": "ca72f2be5b121c46cfb2e3314425c6105f4e66a8bacacfc9b775f6946cb5b55f",
-                "size": 209860
+                "name": "/org.breezyweather/en-US/phoneScreenshots/01-main-header-1.png",
+                "sha256": "c567add11e36fa85bbac67b642ef33a6b54952d9dd44794e4efecd485f0e5163",
+                "size": 79805
               },
               {
-                "name": "/org.breezyweather/en-US/phoneScreenshots/02.png",
-                "sha256": "67948a30876e5a3417474ee56cf25be896ae48b7bb66acc8fb4552a6fb3be155",
-                "size": 177011
+                "name": "/org.breezyweather/en-US/phoneScreenshots/02-main-header-2.png",
+                "sha256": "5449e5ddae1ccdf6a25aa36c25a58f87fc9005e1cdc3e6dd4875c57fe6fb10c3",
+                "size": 70096
               },
               {
-                "name": "/org.breezyweather/en-US/phoneScreenshots/03.png",
-                "sha256": "a0cdd70fa2cf01285ec2c59ecb7ffa5845286c2d9c3b03c60da2dbfa5c4bc050",
-                "size": 162844
+                "name": "/org.breezyweather/en-US/phoneScreenshots/03-main-header-3.png",
+                "sha256": "9d8807f217f0f7bac2b1a41c1400c7bb293c9ec926b30da1d5c0a5ab117c9530",
+                "size": 70842
               },
               {
-                "name": "/org.breezyweather/en-US/phoneScreenshots/04.png",
-                "sha256": "a70a5089bcf844325374433b898869cc64f3aeb691c445d6482fb262fdb3a688",
-                "size": 108493
+                "name": "/org.breezyweather/en-US/phoneScreenshots/04-main-daily-hourly-1.png",
+                "sha256": "0e449dab142dc3eb9c823d1f875256b0d022554de63ca01e996b5b630ac6f170",
+                "size": 83131
               },
               {
-                "name": "/org.breezyweather/en-US/phoneScreenshots/05.png",
-                "sha256": "f64b080db8a59f6cb02506de14dfece6cfafc57955f747303a8d53e5240f4fef",
-                "size": 122616
+                "name": "/org.breezyweather/en-US/phoneScreenshots/05-main-daily-hourly-2.png",
+                "sha256": "c9e35e0a9aa56a1b713245beffab6957accdb570960a68cbfff3029eb73a3208",
+                "size": 69692
+              },
+              {
+                "name": "/org.breezyweather/en-US/phoneScreenshots/06-main-daily-hourly-3.png",
+                "sha256": "e7cf114060d79cf6fc7802ad2e882f6e5709ceea5beec52781401f587dc3be25",
+                "size": 66499
+              },
+              {
+                "name": "/org.breezyweather/en-US/phoneScreenshots/07-air-quality-pollen.png",
+                "sha256": "fe7a7f54fdb24e3d37955f34989b3bfe5286e47a8dbc51f22cbdfe3b09e36669",
+                "size": 65470
+              },
+              {
+                "name": "/org.breezyweather/en-US/phoneScreenshots/08-ephemeris-details.png",
+                "sha256": "4025082cc145dfb3e1394c37606f513102efe9e1444017c80f9f43fa1593c14c",
+                "size": 61869
+              },
+              {
+                "name": "/org.breezyweather/en-US/phoneScreenshots/09-alerts.png",
+                "sha256": "9bdd27d159afa5f12856193151d4b33da0a972f5b9e2262ad097939b2d07aca9",
+                "size": 50531
+              },
+              {
+                "name": "/org.breezyweather/en-US/phoneScreenshots/10-widgets-1.png",
+                "sha256": "6250ee3d7227c5792984a3598054af06ca1feb889154a9fe6cc0ed3847ac3e92",
+                "size": 193734
+              },
+              {
+                "name": "/org.breezyweather/en-US/phoneScreenshots/11-widgets-2.png",
+                "sha256": "e4cda3e226987400d419b6079b8da72e553e1b5e6511223d074ed4a4f4429cb1",
+                "size": 169036
+              },
+              {
+                "name": "/org.breezyweather/en-US/phoneScreenshots/12-sources.png",
+                "sha256": "a31aed62ba2d8722295b48072ee1e43c0a54eebdf48292c75a685cfe9cf60c34",
+                "size": 69938
+              },
+              {
+                "name": "/org.breezyweather/en-US/phoneScreenshots/13-sources-combine.png",
+                "sha256": "934fa52e2cd43e14d77121fd3eb4bb49d32ee85bf582573fa8d0207281741da9",
+                "size": 57301
+              },
+              {
+                "name": "/org.breezyweather/en-US/phoneScreenshots/14-settings.png",
+                "sha256": "10c506c9f349c7994359af6c275c5f6f7e2e229002f6d99e2b11b4208af21510",
+                "size": 64542
               }
             ],
             "fr": [
               {
-                "name": "/org.breezyweather/fr/phoneScreenshots/01.png",
-                "sha256": "606d3e1e386ff8bc0b3a994e2521a02691218105731da1b1334f67cefb13854f",
-                "size": 79955
+                "name": "/org.breezyweather/fr/phoneScreenshots/01-main-header-1.png",
+                "sha256": "c567add11e36fa85bbac67b642ef33a6b54952d9dd44794e4efecd485f0e5163",
+                "size": 79805
               },
               {
-                "name": "/org.breezyweather/fr/phoneScreenshots/02.png",
-                "sha256": "dcf3f2e7d830d501b76a803e82a6f90ef2e50e601d55cfc1d3b67a27a2239f94",
-                "size": 97876
+                "name": "/org.breezyweather/fr/phoneScreenshots/02-main-header-2.png",
+                "sha256": "5449e5ddae1ccdf6a25aa36c25a58f87fc9005e1cdc3e6dd4875c57fe6fb10c3",
+                "size": 70096
               },
               {
-                "name": "/org.breezyweather/fr/phoneScreenshots/03.png",
-                "sha256": "11613070501d0340cd6369e16cb3170cc84d955a9408449d012807cd7052b853",
-                "size": 60480
+                "name": "/org.breezyweather/fr/phoneScreenshots/03-main-header-3.png",
+                "sha256": "9d8807f217f0f7bac2b1a41c1400c7bb293c9ec926b30da1d5c0a5ab117c9530",
+                "size": 70842
               },
               {
-                "name": "/org.breezyweather/fr/phoneScreenshots/04.png",
-                "sha256": "df005faf88e1fbc2ecf82d7090103fa8e4883236488494c90c746effcef15f04",
-                "size": 80214
+                "name": "/org.breezyweather/fr/phoneScreenshots/04-main-daily-hourly-1.png",
+                "sha256": "0e449dab142dc3eb9c823d1f875256b0d022554de63ca01e996b5b630ac6f170",
+                "size": 83131
               },
               {
-                "name": "/org.breezyweather/fr/phoneScreenshots/05.png",
-                "sha256": "91b2974eab9ec57e90e4af06899db562234ce1711d1911ae4b4179178777c639",
-                "size": 68677
+                "name": "/org.breezyweather/fr/phoneScreenshots/05-main-daily-hourly-2.png",
+                "sha256": "c9e35e0a9aa56a1b713245beffab6957accdb570960a68cbfff3029eb73a3208",
+                "size": 69692
               },
               {
-                "name": "/org.breezyweather/fr/phoneScreenshots/06.png",
-                "sha256": "636caab00731e8a7aa06a945b29c0188ebf9e9a4f7bc29fee2147de7172394d7",
-                "size": 58233
+                "name": "/org.breezyweather/fr/phoneScreenshots/06-main-daily-hourly-3.png",
+                "sha256": "e7cf114060d79cf6fc7802ad2e882f6e5709ceea5beec52781401f587dc3be25",
+                "size": 66499
               },
               {
-                "name": "/org.breezyweather/fr/phoneScreenshots/07.png",
-                "sha256": "2b05e2697eb3883ae23f912ec953d335d5d785969c589110276c7e4a083b25bd",
-                "size": 55747
+                "name": "/org.breezyweather/fr/phoneScreenshots/07-air-quality-pollen.png",
+                "sha256": "fe7a7f54fdb24e3d37955f34989b3bfe5286e47a8dbc51f22cbdfe3b09e36669",
+                "size": 65470
+              },
+              {
+                "name": "/org.breezyweather/fr/phoneScreenshots/08-ephemeris-details.png",
+                "sha256": "4025082cc145dfb3e1394c37606f513102efe9e1444017c80f9f43fa1593c14c",
+                "size": 61869
+              },
+              {
+                "name": "/org.breezyweather/fr/phoneScreenshots/09-alerts.png",
+                "sha256": "9bdd27d159afa5f12856193151d4b33da0a972f5b9e2262ad097939b2d07aca9",
+                "size": 50531
+              },
+              {
+                "name": "/org.breezyweather/fr/phoneScreenshots/10-widgets-1.png",
+                "sha256": "6250ee3d7227c5792984a3598054af06ca1feb889154a9fe6cc0ed3847ac3e92",
+                "size": 193734
+              },
+              {
+                "name": "/org.breezyweather/fr/phoneScreenshots/11-widgets-2.png",
+                "sha256": "e4cda3e226987400d419b6079b8da72e553e1b5e6511223d074ed4a4f4429cb1",
+                "size": 169036
+              },
+              {
+                "name": "/org.breezyweather/fr/phoneScreenshots/12-sources.png",
+                "sha256": "a31aed62ba2d8722295b48072ee1e43c0a54eebdf48292c75a685cfe9cf60c34",
+                "size": 69938
+              },
+              {
+                "name": "/org.breezyweather/fr/phoneScreenshots/13-sources-combine.png",
+                "sha256": "934fa52e2cd43e14d77121fd3eb4bb49d32ee85bf582573fa8d0207281741da9",
+                "size": 57301
+              },
+              {
+                "name": "/org.breezyweather/fr/phoneScreenshots/14-settings.png",
+                "sha256": "10c506c9f349c7994359af6c275c5f6f7e2e229002f6d99e2b11b4208af21510",
+                "size": 64542
+              }
+            ],
+            "it": [
+              {
+                "name": "/org.breezyweather/it/phoneScreenshots/01-main-header-1.png",
+                "sha256": "c567add11e36fa85bbac67b642ef33a6b54952d9dd44794e4efecd485f0e5163",
+                "size": 79805
+              },
+              {
+                "name": "/org.breezyweather/it/phoneScreenshots/02-main-header-2.png",
+                "sha256": "5449e5ddae1ccdf6a25aa36c25a58f87fc9005e1cdc3e6dd4875c57fe6fb10c3",
+                "size": 70096
+              },
+              {
+                "name": "/org.breezyweather/it/phoneScreenshots/03-main-header-3.png",
+                "sha256": "9d8807f217f0f7bac2b1a41c1400c7bb293c9ec926b30da1d5c0a5ab117c9530",
+                "size": 70842
+              },
+              {
+                "name": "/org.breezyweather/it/phoneScreenshots/04-main-daily-hourly-1.png",
+                "sha256": "0e449dab142dc3eb9c823d1f875256b0d022554de63ca01e996b5b630ac6f170",
+                "size": 83131
+              },
+              {
+                "name": "/org.breezyweather/it/phoneScreenshots/05-main-daily-hourly-2.png",
+                "sha256": "c9e35e0a9aa56a1b713245beffab6957accdb570960a68cbfff3029eb73a3208",
+                "size": 69692
+              },
+              {
+                "name": "/org.breezyweather/it/phoneScreenshots/06-main-daily-hourly-3.png",
+                "sha256": "e7cf114060d79cf6fc7802ad2e882f6e5709ceea5beec52781401f587dc3be25",
+                "size": 66499
+              },
+              {
+                "name": "/org.breezyweather/it/phoneScreenshots/07-air-quality-pollen.png",
+                "sha256": "fe7a7f54fdb24e3d37955f34989b3bfe5286e47a8dbc51f22cbdfe3b09e36669",
+                "size": 65470
+              },
+              {
+                "name": "/org.breezyweather/it/phoneScreenshots/08-ephemeris-details.png",
+                "sha256": "4025082cc145dfb3e1394c37606f513102efe9e1444017c80f9f43fa1593c14c",
+                "size": 61869
+              },
+              {
+                "name": "/org.breezyweather/it/phoneScreenshots/09-alerts.png",
+                "sha256": "9bdd27d159afa5f12856193151d4b33da0a972f5b9e2262ad097939b2d07aca9",
+                "size": 50531
+              },
+              {
+                "name": "/org.breezyweather/it/phoneScreenshots/10-widgets-1.png",
+                "sha256": "6250ee3d7227c5792984a3598054af06ca1feb889154a9fe6cc0ed3847ac3e92",
+                "size": 193734
+              },
+              {
+                "name": "/org.breezyweather/it/phoneScreenshots/11-widgets-2.png",
+                "sha256": "e4cda3e226987400d419b6079b8da72e553e1b5e6511223d074ed4a4f4429cb1",
+                "size": 169036
+              },
+              {
+                "name": "/org.breezyweather/it/phoneScreenshots/12-sources.png",
+                "sha256": "a31aed62ba2d8722295b48072ee1e43c0a54eebdf48292c75a685cfe9cf60c34",
+                "size": 69938
+              },
+              {
+                "name": "/org.breezyweather/it/phoneScreenshots/13-sources-combine.png",
+                "sha256": "934fa52e2cd43e14d77121fd3eb4bb49d32ee85bf582573fa8d0207281741da9",
+                "size": 57301
+              },
+              {
+                "name": "/org.breezyweather/it/phoneScreenshots/14-settings.png",
+                "sha256": "10c506c9f349c7994359af6c275c5f6f7e2e229002f6d99e2b11b4208af21510",
+                "size": 64542
               }
             ]
           }
@@ -115,6 +267,16 @@
         "icon": {
           "en-US": {
             "name": "/org.breezyweather/en-US/icon_kTyquJ45xtw5Sq8SeuT5HKznfRRbLiC-adQjjAY28R4=.png",
+            "sha256": "913caab89e39c6dc394aaf127ae4f91cace77d145b2e20be69d4238c0636f11e",
+            "size": 19815
+          },
+          "fr": {
+            "name": "/org.breezyweather/fr/icon_kTyquJ45xtw5Sq8SeuT5HKznfRRbLiC-adQjjAY28R4=.png",
+            "sha256": "913caab89e39c6dc394aaf127ae4f91cace77d145b2e20be69d4238c0636f11e",
+            "size": 19815
+          },
+          "it": {
+            "name": "/org.breezyweather/it/icon_kTyquJ45xtw5Sq8SeuT5HKznfRRbLiC-adQjjAY28R4=.png",
             "sha256": "913caab89e39c6dc394aaf127ae4f91cace77d145b2e20be69d4238c0636f11e",
             "size": 19815
           }

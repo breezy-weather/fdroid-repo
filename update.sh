@@ -18,7 +18,7 @@ for github_repo in ${github_repos[@]}; do
 	release=$(cat latest | grep tag_name | sed 's/.*tag_name\":\ \"//' | sed 's/\",//')
 	changelog="$(cat latest | sed -z 's/"\n}//g' | grep body | sed 's/  "body": "//' | sed 's/",//' | sed 's/\\r//g' | sed 's/\\n/  \n/g')"
 	urls=$(cat latest | grep browser_download_url | sed 's/      "browser_download_url": "//' | sed 's/"//')
-	url=$(echo "$urls" | grep .apk$ | grep -v debug | grep -v arm64-v8a | grep -v armeabi-v7a | grep -v x86 | grep -v x86_64 | head -n 1)
+	url=$(echo "$urls" | grep standard.apk$ | grep -v debug | grep -v arm64-v8a | grep -v armeabi-v7a | grep -v x86 | grep -v x86_64 | head -n 1)
 	asset=$(echo $url | head -n 1 | sed 's/.*\///')
 
 	wget -q -O fdroid/repo/$asset $url

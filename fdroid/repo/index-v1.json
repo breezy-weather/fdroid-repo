@@ -1,6 +1,6 @@
 {
   "repo": {
-    "timestamp": 1709946246000,
+    "timestamp": 1709987117000,
     "version": 20002,
     "name": "Breezy Weather",
     "icon": "icon.png",
@@ -15,9 +15,6 @@
     {
       "allowedAPKSigningKeys": [
         "29d435f70aa9aec3c1faff7f7ffa6e15785088d87f06ecfcab9c3cc62dc269d8"
-      ],
-      "antiFeatures": [
-        "NonFreeAssets"
       ],
       "authorName": "breezy-weather",
       "categories": [

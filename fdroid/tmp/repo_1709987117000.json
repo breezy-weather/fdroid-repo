@@ -14,7 +14,7 @@
       }
     },
     "address": "https://breezy-weather.github.io/fdroid-repo/fdroid/repo",
-    "timestamp": 1709946246000
+    "timestamp": 1709987117000
   },
   "packages": {
     "org.breezyweather": {
@@ -362,9 +362,6 @@
                 "name": "org.breezyweather.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
               }
             ]
-          },
-          "antiFeatures": {
-            "NonFreeAssets": {}
           }
         }
       }

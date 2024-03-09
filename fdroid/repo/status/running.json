@@ -1,12 +1,6 @@
 {
   "/etc/issue.net": "Debian GNU/Linux 12",
-  "antiFeatures": {
-    "NonFreeAssets": {
-      "apps": [
-        "org.breezyweather"
-      ]
-    }
-  },
+  "antiFeatures": {},
   "apksigner": "/usr/bin/apksigner",
   "archivePolicy0": [],
   "commandLine": [
@@ -16,7 +10,7 @@
     "--use-date-from-apk"
   ],
   "disabled": [],
-  "endTimestamp": 1709946249693,
+  "endTimestamp": 1709987120820,
   "failedBuilds": {},
   "jarsigner": "/usr/lib/jvm/default-java/bin/jarsigner",
   "keytool": "/usr/lib/jvm/default-java/bin/keytool",
@@ -27,6 +21,6 @@
   "noUpdateCheck": [
     "org.breezyweather"
   ],
-  "startTimestamp": 1709946245000,
+  "startTimestamp": 1709987116000,
   "subcommand": "update"
 }

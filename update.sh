@@ -1,7 +1,6 @@
 #!/bin/bash
 
 declare -a github_repos=("breezy-weather/breezy-weather:Internet")
-declare -a anti_features=("breezy-weather/breezy-weather:NonFreeAssets")
 declare -a fastlane_repos=("breezy-weather/breezy-weather")
 
 if [[ ! -d fdroid/metadata ]]; then

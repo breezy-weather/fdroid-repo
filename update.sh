@@ -95,7 +95,7 @@ AllowedAPKSigningKeys: 29d435f70aa9aec3c1faff7f7ffa6e15785088d87f06ecfcab9c3cc62
 
 			wget -q -O releases https://api.github.com/repos/$repo/releases
 			urls=$(cat releases | grep -m1 '"prerelease": true,' -B31 -A224 | grep browser_download_url | sed 's/      "browser_download_url": "//' | sed 's/"//')
-			url=$(echo "$urls" | grep .apk$ | grep -v debug | grep -v arm64-v8a | grep -v armeabi-v7a | grep -v x86 | grep -v x86_64)
+			url=$(echo "$urls" | grep standard.apk$ | grep -v debug | grep -v arm64-v8a | grep -v armeabi-v7a | grep -v x86 | grep -v x86_64)
 			asset=$(echo $url | sed 's/.*\///')
 
 			if [[ $(cat releases | grep -m1 '"prerelease": true,' -B31 -A224 | grep created_at -m1 | sed 's/.* "//' | sed 's/T.*//' | sed 's/-//g') -ge $(cat latest | grep created_at -m1 | sed 's/.* "//' | sed 's/T.*//' | sed 's/-//g') ]]; then

@@ -44,7 +44,7 @@ for github_repo in ${github_repos[@]}; do
 
 			git clone https://github.com/$repo
 
-			mv $(echo $repo | sed 's/.*\///')/src/basic/fastlane/metadata/android/* fdroid/metadata/$id/
+			mv $(echo $repo | sed 's/.*\///')/fastlane/metadata/android/* fdroid/metadata/$id/
 
 			rm -rf $(echo $repo | sed 's/.*\///')
 

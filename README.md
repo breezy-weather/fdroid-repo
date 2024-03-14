@@ -2,27 +2,23 @@
 The F-Droid repo for Breezy Weather
 
 ## How to use
-### Standard version
-Copy this link and add it to your F-Droid client:
 
-```
-https://breezy-weather.github.io/fdroid-repo/fdroid/repo?fingerprint=3480A7BB2A296D8F98CB90D2309199B5B9519C1B31978DBCD877ADB102AF35EE
-```
+Copy the link from the flavor you want to install and add it to your F-Droid client:
 
-You can also scan this QR code and add the link to your F-Droid client:
+| Flavor      | Link                                                                                                                                                   |
+|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Standard    | `https://breezy-weather.github.io/fdroid-repo/fdroid/repo?fingerprint=3480A7BB2A296D8F98CB90D2309199B5B9519C1B31978DBCD877ADB102AF35EE`                |
+| F-Droid     | `https://breezy-weather.github.io/fdroid-repo/fdroid-version/fdroid/repo?fingerprint=3480A7BB2A296D8F98CB90D2309199B5B9519C1B31978DBCD877ADB102AF35EE` |
+| Google Play | `https://breezy-weather.github.io/fdroid-repo/gplay-version/fdroid/repo?fingerprint=3480A7BB2A296D8F98CB90D2309199B5B9519C1B31978DBCD877ADB102AF35EE`  |
 
-![F-Droid repo QR code](https://breezy-weather.github.io/fdroid-repo/fdroid/repo/index.png)
+You can also scan the QR code from the flavor you want to install and add the link to your F-Droid client:
 
-### F-Droid version
-Copy this link and add it to your F-Droid client:
+| Flavor      | QR code                                                                                                                     |
+|-------------|-----------------------------------------------------------------------------------------------------------------------------|
+| Standard    | ![QR code for repo of Standard flavor](https://breezy-weather.github.io/fdroid-repo/fdroid/repo/index.png)                  |
+| F-Droid     | ![QR code for repo of F-Droid flavor](https://breezy-weather.github.io/fdroid-repo/fdroid-version/fdroid/repo/index.png)    |
+| Google Play | ![QR code for repo of Google Play flavor](https://breezy-weather.github.io/fdroid-repo/gplay-version/fdroid/repo/index.png) |
 
-```
-https://breezy-weather.github.io/fdroid-repo/fdroid-version/fdroid/repo?fingerprint=3480A7BB2A296D8F98CB90D2309199B5B9519C1B31978DBCD877ADB102AF35EE
-```
-
-You can also scan this QR code and add the link to your F-Droid client:
-
-![F-Droid repo QR code](https://breezy-weather.github.io/fdroid-repo/fdroid-version/fdroid/repo/index.png)
 
 ## Licensing information
 This repository is based on [Julian's F-Droid repo](https://gitlab.com/julianfairfax/fdroid-repo).

@@ -30,6 +30,7 @@ jobs:
           sed -i "s/KEY_PASS/$(echo "$KEY_PASS" | sed -e "s/\&/\\\&/")/" config.yml
           sed -i "s/KEYDNAME/$(echo "$KEYDNAME" | sed -e "s/\&/\\\&/")/" config.yml
           chmod +x update.sh
+
           mkdir -p fdroid/repo
           echo "$KEYSTORE" | base64 -d - > fdroid/keystore.keystore
           cp config.yml fdroid/
@@ -38,6 +39,17 @@ jobs:
           rm fdroid/config.yml
           mkdir public
           mv fdroid public/
+
+          mkdir -p fdroid/repo
+          echo "$KEYSTORE" | base64 -d - > fdroid/keystore.keystore
+          cp config.yml fdroid/
+          sed -i 's/fdroid-repo\/gplay/fdroid-repo\/fdroid-version\/gplay/' fdroid/config.yml
+          ./update.sh gplay
+          rm fdroid/keystore.keystore
+          rm fdroid/config.yml
+          mkdir public/gplay-version/
+          mv fdroid public/gplay-version/
+
           mkdir -p fdroid/repo
           echo "$KEYSTORE" | base64 -d - > fdroid/keystore.keystore
           cp config.yml fdroid/

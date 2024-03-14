@@ -1,10 +1,10 @@
 {
   "repo": {
-    "timestamp": 1710432482000,
+    "timestamp": 1710432965000,
     "version": 20002,
     "name": "Breezy Weather",
     "icon": "icon.png",
-    "address": "https://breezy-weather.github.io/fdroid-repo/fdroid/repo",
+    "address": "https://breezy-weather.github.io/fdroid-repo/fdroid-version/fdroid/repo",
     "description": "The F-Droid repository for Breezy Weather"
   },
   "requests": {

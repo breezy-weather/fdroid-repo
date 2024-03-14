@@ -9,12 +9,12 @@
     "icon": {
       "en-US": {
         "name": "/icons/icon.png",
-        "sha256": "100689f2debb6f9e089b4d9c06bf8de92d9b1e6c40104e7205134d62adc66046",
-        "size": 842
+        "sha256": "90719e0ca2d37ae756860db5973ccea23cc6ecbc7a211efe9f98917bd491320d",
+        "size": 989
       }
     },
-    "address": "https://breezy-weather.github.io/fdroid-repo/fdroid/repo",
-    "timestamp": 1710432482000
+    "address": "https://breezy-weather.github.io/fdroid-repo/fdroid-version/fdroid/repo",
+    "timestamp": 1710432965000
   },
   "packages": {
     "org.breezyweather": {

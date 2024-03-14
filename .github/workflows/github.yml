@@ -25,19 +25,28 @@ jobs:
         run: |
           apt update
           apt install aapt curl git fdroidserver -y
+          sed -i "s/KEYALIAS/$(echo "$KEYALIAS" | sed -e "s/\&/\\\&/")/" config.yml
+          sed -i "s/KEYSTORE_PASS/$(echo "$KEYSTORE_PASS" | sed -e "s/\&/\\\&/")/" config.yml
+          sed -i "s/KEY_PASS/$(echo "$KEY_PASS" | sed -e "s/\&/\\\&/")/" config.yml
+          sed -i "s/KEYDNAME/$(echo "$KEYDNAME" | sed -e "s/\&/\\\&/")/" config.yml
+          chmod +x update.sh
           mkdir -p fdroid/repo
           echo "$KEYSTORE" | base64 -d - > fdroid/keystore.keystore
-          mv config.yml fdroid/config.yml
-          sed -i "s/KEYALIAS/$(echo "$KEYALIAS" | sed -e "s/\&/\\\&/")/" fdroid/config.yml
-          sed -i "s/KEYSTORE_PASS/$(echo "$KEYSTORE_PASS" | sed -e "s/\&/\\\&/")/" fdroid/config.yml
-          sed -i "s/KEY_PASS/$(echo "$KEY_PASS" | sed -e "s/\&/\\\&/")/" fdroid/config.yml
-          sed -i "s/KEYDNAME/$(echo "$KEYDNAME" | sed -e "s/\&/\\\&/")/" fdroid/config.yml
-          chmod +x update.sh
-          ./update.sh
+          cp config.yml fdroid/
+          ./update.sh standard
           rm fdroid/keystore.keystore
           rm fdroid/config.yml
           mkdir public
           mv fdroid public/
+          mkdir -p fdroid/repo
+          echo "$KEYSTORE" | base64 -d - > fdroid/keystore.keystore
+          cp config.yml fdroid/
+          sed -i 's/fdroid-repo\/fdroid/fdroid-repo\/fdroid-version\/fdroid/' fdroid/config.yml
+          ./update.sh fdroid
+          rm fdroid/keystore.keystore
+          rm fdroid/config.yml
+          mkdir public/fdroid-version/
+          mv fdroid public/fdroid-version/
         env:
           KEYSTORE: ${{ secrets.KEYSTORE_FDROID }}
           KEYALIAS: ${{ secrets.ALIAS_FDROID }}

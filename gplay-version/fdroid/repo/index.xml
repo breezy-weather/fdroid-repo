@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fdroid>
+	<repo icon="icon.png" name="Breezy Weather" pubkey="308202a63082018e020101300d06092a864886f70d01010b0500301931173015060355040a0c0e427265657a792057656174686572301e170d3233303832363038303533335a170d3438303831393038303533335a301931173015060355040a0c0e427265657a79205765617468657230820122300d06092a864886f70d01010105000382010f003082010a0282010100b553acc81ee6360b57ca299ff4f607ef46e53cf48b9fa006bc3dd401ceb6ce7e395fdd9228cf95e57c07ac0841be2c4438d3455bddb98dfbaff42cf409d22d1ece58a67eef718bd097f76936b67ad7bcbb761d85c04fabe7802123b26c01c7c74dfa88aefe62d37469f909ee3d1acb7ff3eb5446996d14c983e9cd4559885f305a4888b192005079f421c589290e3db9d339d3ee12c0e635a458044d71a505c44ad9c27b9fc71756cfccb9e3bed2f04c5e70e8274287c3f018d14f62608e4449d5e92092429c75e4cc763d0a8febfa8b3dfb03f7827a7d22bc88d24a52f4c7a8bc1da2dbb090373c917a2e4daaf4171bf43c051108d00c968b2d205cfbe564f90203010001300d06092a864886f70d01010b050003820101004c26cf353ca999044dcb2bc3e58e6379ef22d070dcc5a212e65999159c13208b2845aae58a5149eba2c694b2af09194cbba6c3cb344681e115f0555e35fe8aad5bde09b88793ac15ea514381cb2ef3232477c6531f5c3dabaee3fa5eb9b9792c4ec25b8924ed41f509b281a9796186edfb81225c0a71c0657dbfa055d84560b199106068af42039f002e7f93b3cb52c01ab910cd195557b1bad3b44c9f73a6b549089fded7c30d5e6b48bd3bb02ec806def29151de4b13d61a3c29d0a8fa4f5e0c883f4bbc9198a65766e4b01739b6c198275e9855cf4e508cd070ff7b6da3755f56192b9f03258c5d483f2fc80a1e3b358b1b5ade147f8fb02b0ce2c5c90de7" timestamp="1710442891" url="https://breezy-weather.github.io/fdroid-repo/fdroid/repo" version="20002">
+		<description>The F-Droid repository for Breezy Weather</description>
+	</repo>
+	<application id="org.breezyweather">
+		<id>org.breezyweather</id>
+		<added>2024-03-13</added>
+		<lastupdated>2024-03-13</lastupdated>
+		<name>Breezy Weather</name>
+		<summary>A powerful, open-source Material Design weather app.</summary>
+		<desc>Breezy Weather is a free and open-source Android weather app, forked from Geometric Weather, adding new features, sources, modernizing code, fixing bugs, updating dependencies for security reasons, etc., while keep having a smooth user and developer experience in mind.
+
+In the app, you'll find:&lt;ul&gt;
+&lt;li&gt;Real-time weather conditions (temperature, feels like, wind, UV index, humidity, dew point, atmospheric pressure, visibility, cloud cover, ceiling)&lt;/li&gt;
+&lt;li&gt;Daily and hourly forecasts up to 16 days (temperature, air quality, wind, UV index, precipitation, sunshine, feels like)&lt;/li&gt;
+&lt;li&gt;Detailed hourly forecasts (humidity / dew point, pressure, cloud cover, visibility)&lt;/li&gt;
+&lt;li&gt;Precipitation in the next hour&lt;/li&gt;
+&lt;li&gt;Air quality, allergen and ephemeris information&lt;/li&gt;
+&lt;li&gt;Severe weather and precipitation alerts&lt;/li&gt;&lt;/ul&gt;
+
+The app has a strong focus on design, with a simple, clean UX, smooth animations, and Material Design all over, plus lots of customizability:&lt;ul&gt;
+&lt;li&gt;Automatic dark mode&lt;/li&gt;
+&lt;li&gt;Custom icon packs&lt;/li&gt;
+&lt;li&gt;Large selection of home screen widgets for at-a-glance information&lt;/li&gt;
+&lt;li&gt;Live wallpaper&lt;/li&gt;&lt;/ul&gt;
+
+&lt;strong&gt;Sources&lt;/strong&gt;
+Available worldwide weather sources:&lt;ul&gt;
+&lt;li&gt;Open-Meteo&lt;/li&gt;
+&lt;li&gt;AccuWeather¹&lt;/li&gt;
+&lt;li&gt;MET Norway¹&lt;/li&gt;
+&lt;li&gt;OpenWeatherMap¹²&lt;/li&gt;
+&lt;li&gt;Pirate Weather¹³&lt;/li&gt;
+&lt;li&gt;HERE¹³&lt;/li&gt;
+&lt;li&gt;Météo France¹&lt;/li&gt;
+&lt;li&gt;Danmarks Meteorologiske Institut (DMI)¹&lt;/li&gt;&lt;/ul&gt;
+
+Available only-national weather sources:&lt;ul&gt;
+&lt;li&gt;Mixed China sources¹&lt;/li&gt;
+&lt;li&gt;National Weather Service (NWS)¹&lt;/li&gt;
+&lt;li&gt;Bright Sky (DWD)&lt;/li&gt;
+&lt;li&gt;Environment and Climate Change Canada¹&lt;/li&gt;
+&lt;li&gt;Israel Meteorological Service (IMS)¹&lt;/li&gt;
+&lt;li&gt;SMHI¹&lt;/li&gt;
+&lt;li&gt;MET Éireann¹&lt;/li&gt;&lt;/ul&gt;
+
+Available secondary weather sources:&lt;ul&gt;
+&lt;li&gt;ATMO AuRA¹&lt;/li&gt;
+&lt;li&gt;Recosanté&lt;/li&gt;&lt;/ul&gt;
+
+¹ Not included in versions with suffix _fdroid
+² Often rate-limited
+³ Requires an API key
+
+&lt;strong&gt;Versions&lt;/strong&gt;
+Depending on your F-Droid repositories, you may be able to download different flavors of Breezy Weather:
+- Versions with no suffix: standard version, fully open source
+- Versions with _gplay suffix: same as standard + includes proprietary Fused location for Google Play Services users
+- Versions with _fdroid suffix: same as standard without all sources that are not libre/self-hostable
+
+&lt;strong&gt;Permissions&lt;/strong&gt;
+This app requests a number of permissions; some required, some optional.
+
+Required permissions:&lt;ul&gt;
+&lt;li&gt;Network (ACCESS_NETWORK_STATE, ACCESS_WIFI_STATE, INTERNET): Allows the app to fetch weather data from sources over the Internet&lt;/li&gt;
+&lt;/ul&gt;
+
+Optional permissions: &lt;ul&gt;
+&lt;li&gt;Background updates (RECEIVE_BOOT_COMPLETED, WAKE_LOCK, SET_ALARM, FOREGROUND_SERVICE, FOREGROUND_SERVICE_DATA_SYNC, FOREGROUND_SERVICE_SPECIAL_USE): Allows the app to refresh weather data in the background and send today/tomorrow forecast notification&lt;/li&gt;
+&lt;li&gt;Ignore battery optimizations (REQUEST_IGNORE_BATTERY_OPTIMIZATIONS): Prevents the app from being killed in the background. Potentially more reliable method for fetching background weather data on some devices&lt;/li&gt;
+&lt;li&gt;Notification (POST_NOTIFICATIONS): Allows the app to send you optional notifications (alerts, precipitation, today/tomorrow forecast, notification-widget, update progress of background updates, etc)&lt;/li&gt;
+&lt;li&gt;Location (ACCESS_COARSE_LOCATION, ACCESS_FINE_LOCATION, ACCESS_BACKGROUND_LOCATION): Allows the app to show weather in your current location&lt;/li&gt;
+&lt;li&gt;Storage (READ_EXTERNAL_STORAGE, WRITE_EXTERNAL_STORAGE): Allows the app to set the live weather wallpaper and/or widgets on some devices&lt;/li&gt;
+&lt;li&gt;Tile (EXPAND_STATUS_BAR): Allows the app to launch itself from Quick Settings&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;strong&gt;License&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;GNU Lesser General Public License v3.0&lt;/li&gt;
+&lt;li&gt;This License does not grant any rights in the trademarks, service marks, or logos of any Contributor.&lt;/li&gt;
+&lt;li&gt;Misrepresentation of the origin of that material is prohibited, and modified versions of such material must be marked in reasonable ways as diff</desc>
+		<license>LGPL-3.0-only</license>
+		<categories>Internet</categories>
+		<category>Internet</category>
+		<web>https://github.com/breezy-weather/breezy-weather</web>
+		<source>https://github.com/breezy-weather/breezy-weather</source>
+		<tracker>https://github.com/breezy-weather/breezy-weather/issues</tracker>
+		<changelog>https://github.com/breezy-weather/breezy-weather/blob/main/CHANGELOG.md</changelog>
+		<author>breezy-weather</author>
+		<marketversion>v5.1.3-beta</marketversion>
+		<marketvercode>50103</marketvercode>
+		<package>
+			<version>5.1.3-beta_gplay</version>
+			<versioncode>50103</versioncode>
+			<apkname>breezy-weather-v5.1.3-beta-gplay.apk</apkname>
+			<hash type="sha256">331b9e657406d477882c86eaa0d1a4996844c9ae16d4ce392d47f07c78f5a2bc</hash>
+			<size>11839627</size>
+			<sdkver>21</sdkver>
+			<targetSdkVersion>34</targetSdkVersion>
+			<added>2024-03-13</added>
+			<sig>688802048f64d92faa490892a23d802c</sig>
+			<permissions>ACCESS_BACKGROUND_LOCATION,ACCESS_COARSE_LOCATION,ACCESS_FINE_LOCATION,ACCESS_NETWORK_STATE,ACCESS_WIFI_STATE,EXPAND_STATUS_BAR,FOREGROUND_SERVICE,FOREGROUND_SERVICE_DATA_SYNC,FOREGROUND_SERVICE_SPECIAL_USE,INTERNET,POST_NOTIFICATIONS,READ_EXTERNAL_STORAGE,RECEIVE_BOOT_COMPLETED,REQUEST_IGNORE_BATTERY_OPTIMIZATIONS,WAKE_LOCK,com.android.alarm.permission.SET_ALARM,org.breezyweather.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</permissions>
+			<nativecode>arm64-v8a,armeabi-v7a,x86,x86_64</nativecode>
+		</package>
+	</application>
+</fdroid>

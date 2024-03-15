@@ -1,10 +1,10 @@
 {
   "repo": {
     "name": {
-      "en-US": "Breezy Weather"
+      "en-US": "Breezy Weather F-Droid"
     },
     "description": {
-      "en-US": "The F-Droid repository for Breezy Weather"
+      "en-US": "The F-Droid repository for Breezy Weather F-Droid"
     },
     "icon": {
       "en-US": {
@@ -14,7 +14,7 @@
       }
     },
     "address": "https://breezy-weather.github.io/fdroid-repo/fdroid-version/fdroid/repo",
-    "timestamp": 1710486359000
+    "timestamp": 1710529551000
   },
   "packages": {
     "org.breezyweather": {

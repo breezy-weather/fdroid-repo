@@ -1,8 +1,8 @@
 {
   "METADATA_VERSION": 20002,
   "allow_disabled_algorithms": false,
-  "breezy-weather-v5.1.4-fdroid.apk": {
-    "hash": "9a554e49431dc9c28955c33be717fd526bde1a66c39e6800bcf738d31a4f3be5",
+  "breezy-weather-v5.1.5-fdroid.apk": {
+    "hash": "7d7b2fac5577260ba4506db7fb56ff8caea86bd7349eb45c4d9e490ba96e880b",
     "hashType": "sha256",
     "uses-permission": [
       [
@@ -80,9 +80,9 @@
     "icons": {},
     "antiFeatures": [],
     "packageName": "org.breezyweather",
-    "versionCode": 50104,
+    "versionCode": 50105,
     "name": "Breezy Weather",
-    "versionName": "5.1.4-beta_fdroid",
+    "versionName": "5.1.5_fdroid",
     "minSdkVersion": 21,
     "targetSdkVersion": 34,
     "nativecode": [
@@ -93,8 +93,8 @@
     ],
     "sig": "688802048f64d92faa490892a23d802c",
     "signer": "29d435f70aa9aec3c1faff7f7ffa6e15785088d87f06ecfcab9c3cc62dc269d8",
-    "size": 12123488,
-    "apkName": "breezy-weather-v5.1.4-fdroid.apk",
-    "added": 1710596270.0
+    "size": 12127628,
+    "apkName": "breezy-weather-v5.1.5-fdroid.apk",
+    "added": 1710604853.0
   }
 }

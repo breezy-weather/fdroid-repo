@@ -1,8 +1,8 @@
 {
   "METADATA_VERSION": 20002,
   "allow_disabled_algorithms": false,
-  "breezy-weather-v5.1.5-gplay.apk": {
-    "hash": "6126673d5f26f0a99a208350a7ef57e443a99276687a928eea0a5e5f0f4833f4",
+  "breezy-weather-v5.1.6_gplay.apk": {
+    "hash": "165317c8e00e884c7a6201883acd1456f1b41d7a8b1f53e4df0e916516cab4c1",
     "hashType": "sha256",
     "uses-permission": [
       [
@@ -80,9 +80,9 @@
     "icons": {},
     "antiFeatures": [],
     "packageName": "org.breezyweather",
-    "versionCode": 50105,
+    "versionCode": 50106,
     "name": "Breezy Weather",
-    "versionName": "5.1.5_gplay",
+    "versionName": "5.1.6_gplay",
     "minSdkVersion": 21,
     "targetSdkVersion": 34,
     "nativecode": [
@@ -93,8 +93,8 @@
     ],
     "sig": "688802048f64d92faa490892a23d802c",
     "signer": "29d435f70aa9aec3c1faff7f7ffa6e15785088d87f06ecfcab9c3cc62dc269d8",
-    "size": 12667063,
-    "apkName": "breezy-weather-v5.1.5-gplay.apk",
-    "added": 1710604853.0
+    "size": 12699787,
+    "apkName": "breezy-weather-v5.1.6_gplay.apk",
+    "added": 1710873091.0
   }
 }

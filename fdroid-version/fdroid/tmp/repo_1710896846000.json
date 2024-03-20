@@ -1,20 +1,20 @@
 {
   "repo": {
     "name": {
-      "en-US": "Breezy Weather"
+      "en-US": "Breezy Weather F-Droid"
     },
     "description": {
-      "en-US": "The F-Droid repository for Breezy Weather"
+      "en-US": "The F-Droid repository for Breezy Weather F-Droid"
     },
     "icon": {
       "en-US": {
         "name": "/icons/icon.png",
-        "sha256": "100689f2debb6f9e089b4d9c06bf8de92d9b1e6c40104e7205134d62adc66046",
-        "size": 842
+        "sha256": "90719e0ca2d37ae756860db5973ccea23cc6ecbc7a211efe9f98917bd491320d",
+        "size": 989
       }
     },
-    "address": "https://breezy-weather.github.io/fdroid-repo/fdroid/repo",
-    "timestamp": 1710873814000
+    "address": "https://breezy-weather.github.io/fdroid-repo/fdroid-version/fdroid/repo",
+    "timestamp": 1710896846000
   },
   "packages": {
     "org.breezyweather": {
@@ -284,12 +284,12 @@
         "preferredSigner": "29d435f70aa9aec3c1faff7f7ffa6e15785088d87f06ecfcab9c3cc62dc269d8"
       },
       "versions": {
-        "a0795585e76cfac6eabe8264626733a2e60fedd44eeaaf76925a0423c73a59f3": {
+        "a437e9aec5f86730ccd9746e7ec21d01c8b6be552325dfe744f5d739ea3ce835": {
           "added": 1710873091000,
           "file": {
-            "name": "/breezy-weather-v5.1.6_standard.apk",
-            "sha256": "a0795585e76cfac6eabe8264626733a2e60fedd44eeaaf76925a0423c73a59f3",
-            "size": 12459360
+            "name": "/breezy-weather-v5.1.6_fdroid.apk",
+            "sha256": "a437e9aec5f86730ccd9746e7ec21d01c8b6be552325dfe744f5d739ea3ce835",
+            "size": 12160352
           },
           "manifest": {
             "nativecode": [
@@ -298,7 +298,7 @@
               "x86",
               "x86_64"
             ],
-            "versionName": "5.1.6",
+            "versionName": "5.1.6_fdroid",
             "versionCode": 50106,
             "usesSdk": {
               "minSdkVersion": 21,

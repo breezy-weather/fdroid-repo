@@ -14,18 +14,18 @@
       }
     },
     "address": "https://breezy-weather.github.io/fdroid-repo/fdroid-version/fdroid/repo",
-    "timestamp": 1711760778000
+    "timestamp": 1711826423000
   },
   "packages": {
     "org.breezyweather": {
       "metadata": {
-        "added": 1710967437000,
+        "added": 1711825672000,
         "categories": [
           "Internet"
         ],
         "changelog": "https://github.com/breezy-weather/breezy-weather/blob/main/CHANGELOG.md",
         "issueTracker": "https://github.com/breezy-weather/breezy-weather/issues",
-        "lastUpdated": 1710967437000,
+        "lastUpdated": 1711825672000,
         "license": "LGPL-3.0-only",
         "sourceCode": "https://github.com/breezy-weather/breezy-weather",
         "translation": "https://hosted.weblate.org/projects/breezy-weather/breezy-weather-android/#information",
@@ -284,12 +284,12 @@
         "preferredSigner": "29d435f70aa9aec3c1faff7f7ffa6e15785088d87f06ecfcab9c3cc62dc269d8"
       },
       "versions": {
-        "787bc7f991f47215e7c4c50c018577a0c9d34c51b76b8b1ff8f64f31f6965b13": {
-          "added": 1710967437000,
+        "2f884a5c5f0c6650be96d79b5c43c778166f23e528df42583a505c0ef398d17d": {
+          "added": 1711825672000,
           "file": {
-            "name": "/breezy-weather-v5.1.7_fdroid.apk",
-            "sha256": "787bc7f991f47215e7c4c50c018577a0c9d34c51b76b8b1ff8f64f31f6965b13",
-            "size": 12168445
+            "name": "/breezy-weather-v5.1.8_fdroid.apk",
+            "sha256": "2f884a5c5f0c6650be96d79b5c43c778166f23e528df42583a505c0ef398d17d",
+            "size": 12541508
           },
           "manifest": {
             "nativecode": [
@@ -298,8 +298,8 @@
               "x86",
               "x86_64"
             ],
-            "versionName": "5.1.7_fdroid",
-            "versionCode": 50107,
+            "versionName": "5.1.8_fdroid",
+            "versionCode": 50108,
             "usesSdk": {
               "minSdkVersion": 21,
               "targetSdkVersion": 34

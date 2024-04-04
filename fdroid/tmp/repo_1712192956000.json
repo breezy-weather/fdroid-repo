@@ -1,10 +1,10 @@
 {
   "repo": {
     "name": {
-      "en-US": "Breezy Weather Google Play"
+      "en-US": "Breezy Weather"
     },
     "description": {
-      "en-US": "The F-Droid repository for Breezy Weather Google Play"
+      "en-US": "The F-Droid repository for Breezy Weather"
     },
     "icon": {
       "en-US": {
@@ -14,7 +14,7 @@
       }
     },
     "address": "https://breezy-weather.github.io/fdroid-repo/fdroid/repo",
-    "timestamp": 1712106808000
+    "timestamp": 1712192956000
   },
   "packages": {
     "org.breezyweather": {
@@ -284,12 +284,12 @@
         "preferredSigner": "29d435f70aa9aec3c1faff7f7ffa6e15785088d87f06ecfcab9c3cc62dc269d8"
       },
       "versions": {
-        "a6c6b23911b7b94b87a6ed8101ebe5c9ff46c86cd7178e8ee62f83f770c0e761": {
+        "62cec5ad56a9e9ea483b15fa55f461a83ace885bb5c198d3fdf77733b233ec81": {
           "added": 1711825672000,
           "file": {
-            "name": "/breezy-weather-v5.1.8_gplay.apk",
-            "sha256": "a6c6b23911b7b94b87a6ed8101ebe5c9ff46c86cd7178e8ee62f83f770c0e761",
-            "size": 13068655
+            "name": "/breezy-weather-v5.1.8_standard.apk",
+            "sha256": "62cec5ad56a9e9ea483b15fa55f461a83ace885bb5c198d3fdf77733b233ec81",
+            "size": 12828228
           },
           "manifest": {
             "nativecode": [
@@ -298,7 +298,7 @@
               "x86",
               "x86_64"
             ],
-            "versionName": "5.1.8_gplay",
+            "versionName": "5.1.8",
             "versionCode": 50108,
             "usesSdk": {
               "minSdkVersion": 21,

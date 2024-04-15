@@ -1,6 +1,6 @@
 {
   "repo": {
-    "timestamp": 1713151708000,
+    "timestamp": 1713199066000,
     "version": 20002,
     "name": "Breezy Weather",
     "icon": "icon.png",
@@ -21,17 +21,17 @@
         "Internet"
       ],
       "changelog": "https://github.com/breezy-weather/breezy-weather/blob/main/CHANGELOG.md",
-      "suggestedVersionName": "v5.1.8",
-      "suggestedVersionCode": "50108",
+      "suggestedVersionName": "v5.2.0",
+      "suggestedVersionCode": "50200",
       "issueTracker": "https://github.com/breezy-weather/breezy-weather/issues",
       "license": "LGPL-3.0-only",
       "name": "Breezy Weather",
       "sourceCode": "https://github.com/breezy-weather/breezy-weather",
       "translation": "https://hosted.weblate.org/projects/breezy-weather/breezy-weather-android/#information",
       "webSite": "https://github.com/breezy-weather/breezy-weather",
-      "added": 1711825672000,
+      "added": 1713198726000,
       "packageName": "org.breezyweather",
-      "lastUpdated": 1711825672000,
+      "lastUpdated": 1713198726000,
       "localized": {
         "en-US": {
           "description": "Breezy Weather is a free and open-source Android weather app, forked from Geometric Weather, adding new features, sources, modernizing code, fixing bugs, updating dependencies for security reasons, etc., while keep having a smooth user and developer experience in mind.\n\nIn the app, you'll find:\n- Real-time weather conditions (temperature, feels like, wind, UV index, humidity, dew point, atmospheric pressure, visibility, cloud cover, ceiling)\n- Daily and hourly forecasts up to 16 days (temperature, air quality, wind, UV index, precipitation, sunshine, feels like)\n- Detailed hourly forecasts (humidity / dew point, pressure, cloud cover, visibility)\n- Precipitation in the next hour\n- Air quality, allergen and ephemeris information\n- Severe weather and precipitation alerts\n\nThe app has a strong focus on design, with a simple, clean UX, smooth animations, and Material Design all over, plus lots of customizability:\n- Automatic dark mode\n- Custom icon packs\n- Large selection of home screen widgets for at-a-glance information\n- Live wallpaper\n\n<b>Sources</b>\nAvailable worldwide weather sources:\n- Open-Meteo\n- AccuWeather\u00b9\n- MET Norway\u00b9\n- OpenWeatherMap\u00b9\u00b2\n- Pirate Weather\u00b9\u00b3\n- HERE\u00b9\u00b3\n- M\u00e9t\u00e9o France\u00b9\n- Danmarks Meteorologiske Institut (DMI)\u00b9\n\nAvailable only-national weather sources:\n- Mixed China sources\u00b9\n- National Weather Service (NWS)\u00b9\n- Bright Sky (DWD)\n- Environment and Climate Change Canada\u00b9\n- Israel Meteorological Service (IMS)\u00b9\n- SMHI\u00b9\n- MET \u00c9ireann\u00b9\n\nAvailable secondary weather sources:\n- WMO Severe Weather Information Centre\u00b9\n- Recosant\u00e9\n- ATMO AuRA\u00b9\n\n\u00b9 Not included in versions with suffix _fdroid\n\u00b2 Often rate-limited\n\u00b3 Requires an API key\n\n<b>Versions</b>\nDepending on your F-Droid repositories, you may be able to download different flavors of Breezy Weather:\n- Versions with no suffix: standard version, fully open source\n- Versions with _gplay suffix: same as standard + includes proprietary Fused location for Google Play Services users\n- Versions with _fdroid suffix: same as standard without all sources that are not libre/self-hostable\n\n<b>Permissions</b>\nRequired:\n- Network (ACCESS_NETWORK_STATE, ACCESS_WIFI_STATE, INTERNET): fetch weather data from sources over the Internet\n\nOptional:\n- Background services (RECEIVE_BOOT_COMPLETED, WAKE_LOCK, SET_ALARM, FOREGROUND_SERVICE, FOREGROUND_SERVICE_DATA_SYNC, FOREGROUND_SERVICE_SPECIAL_USE): weather updates in the background and scheduled forecast notifications\n- Ignore battery optimizations (REQUEST_IGNORE_BATTERY_OPTIMIZATIONS): help preventing the app from being killed on some devices\n- Send notifications (POST_NOTIFICATIONS): alerts, precipitation, today/tomorrow forecast, notification-widget, update progress of background updates, etc\n- Location (ACCESS_COARSE_LOCATION, ACCESS_FINE_LOCATION, ACCESS_BACKGROUND_LOCATION): to show weather in your current location\n- Storage (READ_EXTERNAL_STORAGE, WRITE_EXTERNAL_STORAGE): helps setting the live weather wallpaper and/or widgets on some devices\n- Tile (EXPAND_STATUS_BAR): allow to launch the app from Quick Settings\n\n<b>License</b>\n- GNU Lesser General Public License v3.0\n- This License does not grant any rights in the trademarks, service marks, or logos of any Contributor.\n- Misrepresentation of the origin of that material is prohibited, and modified versions of such material must be marked in reasonable ways as different from the original version.\n",
@@ -105,9 +105,9 @@
   "packages": {
     "org.breezyweather": [
       {
-        "added": 1711825672000,
-        "apkName": "breezy-weather-v5.1.8_standard.apk",
-        "hash": "62cec5ad56a9e9ea483b15fa55f461a83ace885bb5c198d3fdf77733b233ec81",
+        "added": 1713198726000,
+        "apkName": "breezy-weather-v5.2.0_standard.apk",
+        "hash": "481b09e266b7b88b3c2dfc9d6c1e649de5fe1483657c9ac31b312b14133044c0",
         "hashType": "sha256",
         "minSdkVersion": 21,
         "nativecode": [
@@ -119,7 +119,7 @@
         "packageName": "org.breezyweather",
         "sig": "688802048f64d92faa490892a23d802c",
         "signer": "29d435f70aa9aec3c1faff7f7ffa6e15785088d87f06ecfcab9c3cc62dc269d8",
-        "size": 12828228,
+        "size": 13045373,
         "targetSdkVersion": 34,
         "uses-permission": [
           [
@@ -191,8 +191,8 @@
             null
           ]
         ],
-        "versionCode": 50108,
-        "versionName": "5.1.8"
+        "versionCode": 50200,
+        "versionName": "5.2.0"
       }
     ]
   }

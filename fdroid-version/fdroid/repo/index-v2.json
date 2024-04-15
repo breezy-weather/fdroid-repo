@@ -1,10 +1,10 @@
 {
   "repo": {
     "name": {
-      "en-US": "Breezy Weather F-Droid"
+      "en-US": "Breezy Weather (Free network sources-only)"
     },
     "description": {
-      "en-US": "The F-Droid repository for Breezy Weather F-Droid"
+      "en-US": "The F-Droid repository for Breezy Weather (Free network sources-only)"
     },
     "icon": {
       "en-US": {
@@ -14,18 +14,18 @@
       }
     },
     "address": "https://breezy-weather.github.io/fdroid-repo/fdroid-version/fdroid/repo",
-    "timestamp": 1713151771000
+    "timestamp": 1713199140000
   },
   "packages": {
     "org.breezyweather": {
       "metadata": {
-        "added": 1711825672000,
+        "added": 1713198727000,
         "categories": [
           "Internet"
         ],
         "changelog": "https://github.com/breezy-weather/breezy-weather/blob/main/CHANGELOG.md",
         "issueTracker": "https://github.com/breezy-weather/breezy-weather/issues",
-        "lastUpdated": 1711825672000,
+        "lastUpdated": 1713198727000,
         "license": "LGPL-3.0-only",
         "sourceCode": "https://github.com/breezy-weather/breezy-weather",
         "translation": "https://hosted.weblate.org/projects/breezy-weather/breezy-weather-android/#information",
@@ -284,12 +284,12 @@
         "preferredSigner": "29d435f70aa9aec3c1faff7f7ffa6e15785088d87f06ecfcab9c3cc62dc269d8"
       },
       "versions": {
-        "2f884a5c5f0c6650be96d79b5c43c778166f23e528df42583a505c0ef398d17d": {
-          "added": 1711825672000,
+        "ea171a6bb73fa38599734c3a30d7184a7a29e9ce8ee75aea6b3a63e7ce37665c": {
+          "added": 1713198727000,
           "file": {
-            "name": "/breezy-weather-v5.1.8_fdroid.apk",
-            "sha256": "2f884a5c5f0c6650be96d79b5c43c778166f23e528df42583a505c0ef398d17d",
-            "size": 12541508
+            "name": "/breezy-weather-v5.2.0_freenet.apk",
+            "sha256": "ea171a6bb73fa38599734c3a30d7184a7a29e9ce8ee75aea6b3a63e7ce37665c",
+            "size": 12746365
           },
           "manifest": {
             "nativecode": [
@@ -298,8 +298,8 @@
               "x86",
               "x86_64"
             ],
-            "versionName": "5.1.8_fdroid",
-            "versionCode": 50108,
+            "versionName": "5.2.0_freenet",
+            "versionCode": 50200,
             "usesSdk": {
               "minSdkVersion": 21,
               "targetSdkVersion": 34

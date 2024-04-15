@@ -44,8 +44,8 @@ jobs:
           echo "$KEYSTORE" | base64 -d - > fdroid/keystore.keystore
           cp config.yml fdroid/
           sed -i 's/fdroid-repo\/gplay/fdroid-repo\/fdroid-version\/gplay/g' fdroid/config.yml
-          sed -i 's/Breezy Weather/Breezy Weather Google Play/' fdroid/config.yml
-          ./update.sh gplay
+          sed -i 's/Breezy Weather/Breezy Weather (Google Play, deprecated, please migrate to the standard repo)/' fdroid/config.yml
+          ./update.sh standard
           rm fdroid/keystore.keystore
           rm fdroid/config.yml
           mkdir public/gplay-version/
@@ -55,8 +55,8 @@ jobs:
           echo "$KEYSTORE" | base64 -d - > fdroid/keystore.keystore
           cp config.yml fdroid/
           sed -i 's/fdroid-repo\/fdroid/fdroid-repo\/fdroid-version\/fdroid/g' fdroid/config.yml
-          sed -i 's/Breezy Weather/Breezy Weather F-Droid/' fdroid/config.yml
-          ./update.sh fdroid
+          sed -i 's/Breezy Weather/Breezy Weather (Free network sources-only)/' fdroid/config.yml
+          ./update.sh freenet
           rm fdroid/keystore.keystore
           rm fdroid/config.yml
           mkdir public/fdroid-version/

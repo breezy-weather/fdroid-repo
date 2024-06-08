@@ -1,20 +1,20 @@
 {
   "repo": {
     "name": {
-      "en-US": "Breezy Weather (Free network sources-only)"
+      "en-US": "Breezy Weather (Google Play, deprecated, please migrate to the standard repo)"
     },
     "description": {
-      "en-US": "The F-Droid repository for Breezy Weather (Free network sources-only)"
+      "en-US": "The F-Droid repository for Breezy Weather (Google Play, deprecated, please migrate to the standard repo)"
     },
     "icon": {
       "en-US": {
         "name": "/icons/icon.png",
-        "sha256": "90719e0ca2d37ae756860db5973ccea23cc6ecbc7a211efe9f98917bd491320d",
-        "size": 989
+        "sha256": "100689f2debb6f9e089b4d9c06bf8de92d9b1e6c40104e7205134d62adc66046",
+        "size": 842
       }
     },
-    "address": "https://breezy-weather.github.io/fdroid-repo/fdroid-version/fdroid/repo",
-    "timestamp": 1717723068000
+    "address": "https://breezy-weather.github.io/fdroid-repo/fdroid/repo",
+    "timestamp": 1717809303000
   },
   "packages": {
     "org.breezyweather": {
@@ -284,12 +284,12 @@
         "preferredSigner": "29d435f70aa9aec3c1faff7f7ffa6e15785088d87f06ecfcab9c3cc62dc269d8"
       },
       "versions": {
-        "907b910e89cc392f09cb51fb9758b1dd352d6a7944c74102bf70d8bda2626023": {
+        "6aea96830eaa9b7b9ea8311bc38d193640b629da334e3d88c2144eab855e8071": {
           "added": 1717240848000,
           "file": {
-            "name": "/breezy-weather-v5.2.4_freenet.apk",
-            "sha256": "907b910e89cc392f09cb51fb9758b1dd352d6a7944c74102bf70d8bda2626023",
-            "size": 12787356
+            "name": "/breezy-weather-v5.2.4_standard.apk",
+            "sha256": "6aea96830eaa9b7b9ea8311bc38d193640b629da334e3d88c2144eab855e8071",
+            "size": 13078172
           },
           "manifest": {
             "nativecode": [
@@ -298,7 +298,7 @@
               "x86",
               "x86_64"
             ],
-            "versionName": "5.2.4_freenet",
+            "versionName": "5.2.4",
             "versionCode": 50204,
             "usesSdk": {
               "minSdkVersion": 21,

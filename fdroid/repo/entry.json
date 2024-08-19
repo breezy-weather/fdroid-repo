@@ -1,9 +1,9 @@
 {
-  "timestamp": 1723944247000,
+  "timestamp": 1724030454000,
   "version": 20002,
   "index": {
     "name": "/index-v2.json",
-    "sha256": "6f2e55f6eb8f79393956ced5db75fafa53730f97153fab8a0443d0799453d850",
+    "sha256": "8773ff4a5a17a12c0ba8cecc652706b43f847116479f7f14e2363495b59c4d9a",
     "size": 25873,
     "numPackages": 1
   },

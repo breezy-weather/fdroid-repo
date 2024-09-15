@@ -1,8 +1,8 @@
 AuthorName: breezy-weather
 Categories:
     - Internet
-CurrentVersion: v5.2.7
-CurrentVersionCode: 50207
+CurrentVersion: v5.2.8
+CurrentVersionCode: 50208
 IssueTracker: https://github.com/breezy-weather/breezy-weather/issues
 License: LGPL-3.0-only
 Name: Breezy Weather

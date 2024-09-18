@@ -1,10 +1,10 @@
 {
   "repo": {
     "name": {
-      "en-US": "Breezy Weather (Google Play, deprecated, please migrate to the standard repo)"
+      "en-US": "Breezy Weather"
     },
     "description": {
-      "en-US": "The F-Droid repository for Breezy Weather (Google Play, deprecated, please migrate to the standard repo)"
+      "en-US": "The F-Droid repository for Breezy Weather"
     },
     "icon": {
       "en-US": {
@@ -14,7 +14,7 @@
       }
     },
     "address": "https://breezy-weather.github.io/fdroid-repo/fdroid/repo",
-    "timestamp": 1726535494000
+    "timestamp": 1726622628000
   },
   "packages": {
     "org.breezyweather": {

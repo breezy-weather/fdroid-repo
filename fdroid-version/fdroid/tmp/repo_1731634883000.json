@@ -1,31 +1,31 @@
 {
   "repo": {
     "name": {
-      "en-US": "Breezy Weather (Google Play, deprecated, please migrate to the standard repo)"
+      "en-US": "Breezy Weather (Free network sources-only)"
     },
     "description": {
-      "en-US": "The F-Droid repository for Breezy Weather (Google Play, deprecated, please migrate to the standard repo)"
+      "en-US": "The F-Droid repository for Breezy Weather (Free network sources-only)"
     },
     "icon": {
       "en-US": {
         "name": "/icons/icon.png",
-        "sha256": "100689f2debb6f9e089b4d9c06bf8de92d9b1e6c40104e7205134d62adc66046",
-        "size": 842
+        "sha256": "90719e0ca2d37ae756860db5973ccea23cc6ecbc7a211efe9f98917bd491320d",
+        "size": 989
       }
     },
-    "address": "https://breezy-weather.github.io/fdroid-repo/fdroid/repo",
-    "timestamp": 1731547676000
+    "address": "https://breezy-weather.github.io/fdroid-repo/fdroid-version/fdroid/repo",
+    "timestamp": 1731634883000
   },
   "packages": {
     "org.breezyweather": {
       "metadata": {
-        "added": 1726399192000,
+        "added": 1726399193000,
         "categories": [
           "Internet"
         ],
         "changelog": "https://github.com/breezy-weather/breezy-weather/blob/main/CHANGELOG.md",
         "issueTracker": "https://github.com/breezy-weather/breezy-weather/issues",
-        "lastUpdated": 1726399192000,
+        "lastUpdated": 1726399193000,
         "license": "LGPL-3.0-only",
         "sourceCode": "https://github.com/breezy-weather/breezy-weather",
         "translation": "https://hosted.weblate.org/projects/breezy-weather/breezy-weather-android/#information",
@@ -284,12 +284,12 @@
         "preferredSigner": "29d435f70aa9aec3c1faff7f7ffa6e15785088d87f06ecfcab9c3cc62dc269d8"
       },
       "versions": {
-        "960900d372014728495adbfaa68725fa8bb6856a22aa3f4991bf8043c167a436": {
-          "added": 1726399192000,
+        "4f8036f29af4a6667afe463bd83e38a7321d975a896db0277965fa5f96f3f9af": {
+          "added": 1726399193000,
           "file": {
-            "name": "/breezy-weather-v5.2.8_standard.apk",
-            "sha256": "960900d372014728495adbfaa68725fa8bb6856a22aa3f4991bf8043c167a436",
-            "size": 13463782
+            "name": "/breezy-weather-v5.2.8_freenet.apk",
+            "sha256": "4f8036f29af4a6667afe463bd83e38a7321d975a896db0277965fa5f96f3f9af",
+            "size": 13107430
           },
           "manifest": {
             "nativecode": [
@@ -298,7 +298,7 @@
               "x86",
               "x86_64"
             ],
-            "versionName": "5.2.8",
+            "versionName": "5.2.8_freenet",
             "versionCode": 50208,
             "usesSdk": {
               "minSdkVersion": 21,

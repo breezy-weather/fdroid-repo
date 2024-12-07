@@ -16,7 +16,7 @@ jobs:
     name: "Build"
     runs-on: ubuntu-latest
     container:
-      image: debian:latest
+      image: debian:testing
 
     steps:
       - uses: actions/checkout@v4

@@ -1,0 +1,26 @@
+{
+  "/etc/issue.net": "Debian GNU/Linux trixie/sid",
+  "antiFeatures": {},
+  "apksigner": "/usr/bin/apksigner",
+  "archivePolicy0": [],
+  "commandLine": [
+    "/usr/bin/fdroid update",
+    "--pretty",
+    "--delete-unknown",
+    "--use-date-from-apk"
+  ],
+  "disabled": [],
+  "endTimestamp": 1734572458803,
+  "failedBuilds": {},
+  "jarsigner": "/usr/lib/jvm/default-java/bin/jarsigner",
+  "keytool": "/usr/lib/jvm/default-java/bin/keytool",
+  "needsUpdate": [],
+  "noPackages": [
+    "org.breezyweather"
+  ],
+  "noUpdateCheck": [
+    "org.breezyweather"
+  ],
+  "startTimestamp": 1734572454000,
+  "subcommand": "update"
+}

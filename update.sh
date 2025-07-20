@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -x
+
 declare -a github_repos=("breezy-weather/breezy-weather:Internet")
 declare -a fastlane_repos=("breezy-weather/breezy-weather")
 

@@ -15,14 +15,14 @@ fi
 
 for github_repo in ${github_repos[@]}; do
 	repo=$(echo $github_repo | sed 's|:.*||')
-	wget -O latest https://api.github.com/repos/$repo/releases/latest
+	wget --header "authorization: Bearer $TOKEN" -O latest https://api.github.com/repos/$repo/releases/latest
 	release=$(cat latest | grep tag_name | sed 's/.*tag_name\":\ \"//' | sed 's/\",//')
 	changelog="$(cat latest | sed -z 's/"\n}//g' | grep body | sed 's/  "body": "//' | sed 's/",//' | sed 's/\\r//g' | sed 's/\\n/  \n/g')"
 	urls=$(cat latest | grep browser_download_url | sed 's/      "browser_download_url": "//' | sed 's/"//')
 	url=$(echo "$urls" | grep ${1}.apk$ | grep -v debug | grep -v arm64-v8a | grep -v armeabi-v7a | grep -v x86 | grep -v x86_64 | head -n 1)
 	asset=$(echo $url | head -n 1 | sed 's/.*\///')
 
-	wget -O fdroid/repo/$asset $url
+	wget --header "authorization: Bearer $TOKEN" -O fdroid/repo/$asset $url
 
 	name=$(aapt dump badging fdroid/repo/$asset | grep application-label: | sed "s/application-label:'//" | sed "s/'.*//")
 	version=$(aapt dump badging fdroid/repo/$asset | grep versionCode | sed "s/.*versionCode='//" | sed "s/'.*//")
@@ -95,13 +95,13 @@ Translation: https://hosted.weblate.org/projects/breezy-weather/breezy-weather-a
 
 AllowedAPKSigningKeys: 29d435f70aa9aec3c1faff7f7ffa6e15785088d87f06ecfcab9c3cc62dc269d8" | tee -a fdroid/metadata/$id.yml
 
-			wget -O releases https://api.github.com/repos/$repo/releases
+			wget --header "authorization: Bearer $TOKEN" -O releases https://api.github.com/repos/$repo/releases
 			urls=$(cat releases | grep -m1 '"prerelease": true,' -B31 -A224 | grep browser_download_url | sed 's/      "browser_download_url": "//' | sed 's/"//')
 			url=$(echo "$urls" | grep ${1}.apk$ | grep -v debug | grep -v arm64-v8a | grep -v armeabi-v7a | grep -v x86 | grep -v x86_64)
 			asset=$(echo $url | sed 's/.*\///')
 
 			if [[ $(cat releases | grep -m1 '"prerelease": true,' -B31 -A224 | grep created_at -m1 | sed 's/.* "//' | sed 's/T.*//' | sed 's/-//g') -ge $(cat latest | grep created_at -m1 | sed 's/.* "//' | sed 's/T.*//' | sed 's/-//g') ]]; then
-				wget -O fdroid/repo/$asset $url
+				wget --header "authorization: Bearer $TOKEN" -O fdroid/repo/$asset $url
 			fi
 
 			rm latest
@@ -113,7 +113,7 @@ AllowedAPKSigningKeys: 29d435f70aa9aec3c1faff7f7ffa6e15785088d87f06ecfcab9c3cc62
 	if [[ ! -f fdroid/metadata/$id.yml ]]; then
 		description=""
 
-		wget -O repo https://api.github.com/repos/$repo
+		wget --header "authorization: Bearer $TOKEN" -O repo https://api.github.com/repos/$repo
 		if [[ ! $(cat repo | grep description -m 1 | sed 's/  "description": "//' | sed 's/",//') == *null* ]]; then
 			description=$(cat repo | grep description -m 1 | sed 's/  "description": "//' | sed 's/",//')
 		fi

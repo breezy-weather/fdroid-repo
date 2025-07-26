@@ -1,0 +1,269 @@
+{
+  "repo": {
+    "timestamp": 1753495142000,
+    "version": 20002,
+    "name": "Breezy Weather (Free network sources-only)",
+    "icon": "icon.png",
+    "address": "https://breezy-weather.github.io/fdroid-repo/fdroid-version/fdroid/repo",
+    "description": "The F-Droid repository for Breezy Weather (Free network sources-only)"
+  },
+  "requests": {
+    "install": [],
+    "uninstall": []
+  },
+  "apps": [
+    {
+      "allowedAPKSigningKeys": [
+        "29d435f70aa9aec3c1faff7f7ffa6e15785088d87f06ecfcab9c3cc62dc269d8"
+      ],
+      "authorName": "breezy-weather",
+      "categories": [
+        "Internet"
+      ],
+      "changelog": "https://github.com/breezy-weather/breezy-weather/blob/main/CHANGELOG.md",
+      "suggestedVersionName": "v5.4.8",
+      "suggestedVersionCode": "50408",
+      "issueTracker": "https://github.com/breezy-weather/breezy-weather/issues",
+      "license": "LGPL-3.0-only",
+      "name": "Breezy Weather",
+      "sourceCode": "https://github.com/breezy-weather/breezy-weather",
+      "translation": "https://hosted.weblate.org/projects/breezy-weather/breezy-weather-android/#information",
+      "webSite": "https://github.com/breezy-weather/breezy-weather",
+      "added": 1750581409000,
+      "packageName": "org.breezyweather",
+      "lastUpdated": 1753286898000,
+      "localized": {
+        "en-US": {
+          "description": "Breezy Weather is a feature-rich free and open source Material 3 Expressive weather app with well-though-out visualizations, supporting forecast, real-time weather conditions, nowcasting, air quality, pollen, alerts, from more than 50 weather sources, such as NWS, Met Office UK, Met \u00c9ireann, ECCC and Open-Meteo.\n\n<b>Features</b>\n\n- Daily and hourly forecasts up to 16 days\n- Precipitation in the next hour\n- Real-time weather conditions\n- Air quality, allergen and ephemeris information\n- Severe weather and precipitation alerts\n- Opt-in data sharing with other apps (such as Gadgetbridge)\n- Focus on accessibility for screen readers and other locales\n\n<b>Design</b>\n\n- Material 3 Expressive\n- Detailed 24-hour charts\n- Automatic dark mode\n- Custom icon packs\n- Large selection of widgets\n- Live wallpaper\n\n<b>Sources</b>\n\n- In all flavors: Open-Meteo, ANAM-BF, Bright Sky (DWD), DCCMS, DMN, DWR, EMI, GMet, IGEBU, INM, Mali-M\u00e9t\u00e9o, M\u00e9t\u00e9o Benin, M\u00e9t\u00e9o Tchad, M\u00e9t\u00e9o Togo, Mettelsat, MSD, Pirate Weather, Recosant\u00e9, SMA (Seychelles), SMA (Sudan), SSMS\n- Not libre/self-hostable (not included in versions with suffix _freenet): AccuWeather, AEMET, Atmo Auvergne-Rh\u00f4ne-Alpes, Atmo France, ATMO GrandEst, Atmo Hauts-de-France, AtmoSud, Baidu IP location, BMD, BMKG, CWA, DMI, ECCC, EKUK, EPD (Hong Kong), GeoNames, GeoSphere AT, HERE, HKO, Ilmateenistus, IMD, IMS, IP.SB, IPMA, LHMT, LV\u0122MC, JMA, MET \u00c9ireann, MET Norway, Met Office UK, Meteo AM, M\u00e9t\u00e9o-France, MeteoLux, MGM, Mixed China sources, NAMEM, NWS, OpenWeather, PAGASA, SMG, WMO Severe Weather\n\n<b>Permissions</b>\n\nRequired:\n\n- Network (ACCESS_NETWORK_STATE, ACCESS_WIFI_STATE, INTERNET): fetch weather data from sources over the Internet\n\nOptional:\n\n- Background services (RECEIVE_BOOT_COMPLETED, WAKE_LOCK, SET_ALARM, FOREGROUND_SERVICE, FOREGROUND_SERVICE_DATA_SYNC, FOREGROUND_SERVICE_SPECIAL_USE): weather updates in the background and scheduled forecast notifications\n- Ignore battery optimizations (REQUEST_IGNORE_BATTERY_OPTIMIZATIONS): help preventing the app from being killed on some devices\n- Send notifications (POST_NOTIFICATIONS): alerts, precipitation, today/tomorrow forecast, notification-widget, update progress of background updates, etc\n- Location (ACCESS_COARSE_LOCATION, ACCESS_FINE_LOCATION, ACCESS_BACKGROUND_LOCATION): to show weather in your current location\n- Storage (READ_EXTERNAL_STORAGE, WRITE_EXTERNAL_STORAGE): helps setting the live weather wallpaper and/or widgets on some devices\n- Tile (EXPAND_STATUS_BAR): allow to launch the app from Quick Settings\n- Specific app language (READ_APP_SPECIFIC_LOCALES): allows to save a specific language for the app and read the value after reboot on some devices\n\n<b>License</b>\n\n- GNU Lesser General Public License v3.0\n- This License does not grant any rights in the trademarks, service marks, or logos of any Contributor.\n- Misrepresentation of the origin of that material is prohibited, and modified versions of such material must be marked in reasonable ways as different from the original version.\n",
+          "icon": "icon_9s6OWodFUYb8-7w_fcaXpGLD1cw1YKEVneV4H1xpToI=.png",
+          "phoneScreenshots": [
+            "01-main-header-light.png",
+            "02-main-header-dark.png",
+            "03-main-blocks-1.png",
+            "04-main-blocks-2.png",
+            "05-settings.png",
+            "06-sources.png",
+            "07-details.png"
+          ],
+          "summary": "A feature-rich weather app with good visualizations and many sources.",
+          "whatsNew": "Release notes are available on GitHub:\nhttps://github.com/breezy-weather/breezy-weather/releases\n"
+        },
+        "fr": {
+          "description": "Breezy Weather est une application m\u00e9t\u00e9o gratuite et libre en Material 3 Expressive avec des visualisations bien pens\u00e9es, prenant en charge les pr\u00e9visions, les conditions m\u00e9t\u00e9orologiques en temps r\u00e9el, les pr\u00e9visions imm\u00e9diates, la qualit\u00e9 de l'air, le pollen, les alertes, \u00e0 partir de plus de 50 sources m\u00e9t\u00e9orologiques, telles que M\u00e9t\u00e9o-France, Atmo, ECCC, MeteoLux et Open-Meteo.\n\n<b>Fonctionnalit\u00e9s</b>\n\n- Pr\u00e9visions quotidiennes et horaires jusqu\u2019\u00e0 un maximum de 16 jours\n- Pr\u00e9cipitations dans l\u2019heure \u00e0 venir\n- Conditions m\u00e9t\u00e9orologiques en temps r\u00e9el\n- Informations sur la qualit\u00e9 de l\u2019air, les allerg\u00e8nes et l\u2019\u00e9ph\u00e9m\u00e9ride\n- Vigilances m\u00e9t\u00e9o et alertes de pr\u00e9cipitations\n- Partage sur demande des donn\u00e9es avec d\u2019autres applications (comme Gadgetbridge)\n- Accessibilit\u00e9 pour les lecteurs d\u2019\u00e9cran et pour d\u2019autres localisations\n\n<b>Design</b>\n\n- Material 3 Expressive\n- Graphiques sur 24 heures d\u00e9taill\u00e9s\n- Th\u00e8me sombre automatique\n- Packs d\u2019ic\u00f4nes personnalis\u00e9es\n- Large s\u00e9lection de widgets\n- Fond d\u2019\u00e9crans anim\u00e9s\n\n<b>Sources</b>\n\n- Toutes versions\u00a0: Open-Meteo, ANAM-BF, Bright Sky (DWD), DCCMS, DMN, DWR, EMI, GMet, IGEBU, INM, Mali-M\u00e9t\u00e9o, M\u00e9t\u00e9o Benin, M\u00e9t\u00e9o Tchad, M\u00e9t\u00e9o Togo, Mettelsat, MSD, Pirate Weather, Recosant\u00e9, SMA (Seychelles), SMA (Sudan), SSMS\n- Sites non libres/auto-h\u00e9bergeables (non inclues dans les versions avec suffixe _freenet)\u00a0: AccuWeather, AEMET, Atmo Auvergne-Rh\u00f4ne-Alpes, Atmo France, ATMO GrandEst, Atmo Hauts-de-France, AtmoSud, Baidu IP location, BMD, BMKG, CWA, DMI, ECCC, EKUK, EPD (Hong Kong), GeoNames, GeoSphere AT, HERE, HKO, Ilmateenistus, IMD, IMS, IP.SB, IPMA, LHMT, LV\u0122MC, JMA, MET \u00c9ireann, MET Norway, Met Office UK, Meteo AM, M\u00e9t\u00e9o-France, MeteoLux, MGM, Mix de sources pour la Chine, NAMEM, NWS, OpenWeather, PAGASA, SMG, OMM Centre d\u2019Information des Ph\u00e9nom\u00e8nes Dangereux\n\n<b>Permissions</b>\n\nObligatoires\u00a0:\n\n- R\u00e9seau (ACCESS_NETWORK_STATE, ACCESS_WIFI_STATE, INTERNET)\u00a0: r\u00e9cup\u00e9rer des donn\u00e9es m\u00e9t\u00e9o depuis des sources sur Internet\n\nFacultatives\u00a0:\n\n- Services en arri\u00e8re-plan (RECEIVE_BOOT_COMPLETED, WAKE_LOCK, SET_ALARM, FOREGROUND_SERVICE, FOREGROUND_SERVICE_DATA_SYNC, FOREGROUND_SERVICE_SPECIAL_USE)\u00a0: mises \u00e0 jour m\u00e9t\u00e9o en arri\u00e8re-plan et notifications programm\u00e9es des pr\u00e9visions\n- Ignorer l\u2019optimisation de la batterie (REQUEST_IGNORE_BATTERY_OPTIMIZATIONS)\u00a0: aide \u00e0 emp\u00eacher l\u2019application d\u2019\u00eatre tu\u00e9e en arri\u00e8re-plan sur certains appareils\n- Envoyer des notification (POST_NOTIFICATIONS)\u00a0: vigilances, pr\u00e9cipitations, pr\u00e9visions du jour/lendemain, notification-widget, avancement des mises \u00e0 jour en arri\u00e8re-plan, etc\n- Localisation (ACCESS_COARSE_LOCATION, ACCESS_FINE_LOCATION, ACCESS_BACKGROUND_LOCATION)\u00a0: pour afficher la m\u00e9t\u00e9o pour votre position actuelle\n- Stockage (READ_EXTERNAL_STORAGE, WRITE_EXTERNAL_STORAGE)\u00a0: permet \u00e0 l\u2019application de d\u00e9finir le fond d\u2019\u00e9cran anim\u00e9 et/ou les widgets sur certains appareils\n- Ic\u00f4ne syst\u00e8me (EXPAND_STATUS_BAR)\u00a0: permet de lancer l\u2019application depuis les param\u00e8tres rapides\n- Langue sp\u00e9cifique pour l\u2019appli (READ_APP_SPECIFIC_LOCALES): permet de sauvegarder une langue sp\u00e9cifique pour l\u2019appli et lire sa valeur apr\u00e8s un red\u00e9marrage pour certains appareils\n\n<b>Licence</b>\n\n- GNU Lesser General Public License v3.0\n- This License does not grant any rights in the trademarks, service marks, or logos of any Contributor.\n- Misrepresentation of the origin of that material is prohibited, and modified versions of such material must be marked in reasonable ways as different from the original version.\n",
+          "phoneScreenshots": [
+            "01-main-header-light.png",
+            "02-main-header-dark.png",
+            "03-main-blocks-1.png",
+            "04-main-blocks-2.png",
+            "05-warnings.png",
+            "06-settings.png",
+            "07-sources.png",
+            "08-details.png"
+          ],
+          "summary": "Une appli m\u00e9t\u00e9o riche en fonctionnalit\u00e9s, visualisations et sources support\u00e9es.",
+          "whatsNew": "Les notes de version sont disponibles sur GitHub\u00a0:\nhttps://github.com/breezy-weather/breezy-weather/releases\n"
+        },
+        "hu": {
+          "summary": "A feature-rich weather app with good visualizations and many sources."
+        },
+        "it": {
+          "description": "Breezy Weather is a feature-rich free and open source Material 3 Expressive weather app with well-though-out visualizations, supporting forecast, real-time weather conditions, nowcasting, air quality, pollen, alerts, from more than 50 weather sources, such as Meteo AM and Open-Meteo.\n\n<b>Features</b>\n\n- Previsioni orarie e giornaliere fino a 16 giorni\n- Condizioni in tempo reale\n- Precipitazioni durante l'ora a venire\n- Qualit\u00e0 dell'aria, allergeni e dati sole e luna\n- Avvisi di maltempo e di precipitazioni\n- Opt-in data sharing with other apps (such as Gadgetbridge)\n- Focus on accessibility for screen readers and other locales\n\n<b>Design</b>\n\n- Material 3 Expressive\n- Detailed 24-hour charts\n- Tema scuro automatico\n- Temi di icone personalizzati\n- Ampia scelta di widget\n- Sfondo animato\n\n<b>Sources</b>\n\n- In all flavors: Open-Meteo, ANAM-BF, Bright Sky (DWD), DCCMS, DMN, DWR, EMI, GMet, IGEBU, INM, Mali-M\u00e9t\u00e9o, M\u00e9t\u00e9o Benin, M\u00e9t\u00e9o Tchad, M\u00e9t\u00e9o Togo, Mettelsat, MSD, Pirate Weather, Recosant\u00e9, SMA (Seychelles), SMA (Sudan), SSMS\n- Not libre/self-hostable (not included in versions with suffix _freenet): AccuWeather, AEMET, Atmo Auvergne-Rh\u00f4ne-Alpes, Atmo France, ATMO GrandEst, Atmo Hauts-de-France, AtmoSud, Baidu IP location, BMD, BMKG, CWA, DMI, ECCC, EKUK, EPD (Hong Kong), GeoNames, GeoSphere AT, HERE, HKO, Ilmateenistus, IMD, IMS, IP.SB, IPMA, LHMT, LV\u0122MC, JMA, MET \u00c9ireann, MET Norway, Met Office UK, Meteo AM, M\u00e9t\u00e9o-France, MeteoLux, MGM, Varie fonti per la Cina, NAMEM, NWS, OpenWeather, PAGASA, SMG, OMM Eventi Meteorologici Estremi\n\n<b>Autorizzazioni</b>\n\nObbligatorie:\n\n- Network (ACCESS_NETWORK_STATE, ACCESS_WIFI_STATE, INTERNET): fetch weather data from sources over the Internet\n\nFacoltative:\n\n- Background services (RECEIVE_BOOT_COMPLETED, WAKE_LOCK, SET_ALARM, FOREGROUND_SERVICE, FOREGROUND_SERVICE_DATA_SYNC, FOREGROUND_SERVICE_SPECIAL_USE): weather updates in the background and scheduled forecast notifications\n- Ignore battery optimizations (REQUEST_IGNORE_BATTERY_OPTIMIZATIONS): help preventing the app from being killed on some devices\n- Send notifications (POST_NOTIFICATIONS): alerts, precipitation, today/tomorrow forecast, notification-widget, update progress of background updates, etc\n- Location (ACCESS_COARSE_LOCATION, ACCESS_FINE_LOCATION, ACCESS_BACKGROUND_LOCATION): to show weather in your current location\n- Storage (READ_EXTERNAL_STORAGE, WRITE_EXTERNAL_STORAGE): helps setting the live weather wallpaper and/or widgets on some devices\n- Tile (EXPAND_STATUS_BAR): allow to launch the app from Quick Settings\n- Specific app language (READ_APP_SPECIFIC_LOCALES): allows to save a specific language for the app and read the value after reboot on some devices\n\n<b>License</b>\n\n- GNU Lesser General Public License v3.0\n- This License does not grant any rights in the trademarks, service marks, or logos of any Contributor.\n- Misrepresentation of the origin of that material is prohibited, and modified versions of such material must be marked in reasonable ways as different from the original version.\n\n"
+        },
+        "zh_Hant": {
+          "summary": "\u529f\u80fd\u5f37\u5927\u3001\u98a8\u683c\u9bae\u660e\u7684\u5168\u7403\u5929\u6c23 app\uff0c\u652f\u63f4\u591a\u570b\u5b98\u65b9\u53ca\u7b2c\u4e09\u65b9\u5929\u6c23\u8cc7\u6599\u4f86\u6e90\u3002"
+        },
+        "zh_Hant_HK": {
+          "summary": "\u529f\u80fd\u5f37\u5927\u3001\u98a8\u683c\u9bae\u660e\u7684\u5168\u7403\u5929\u6c23 app\uff0c\u652f\u63f4\u591a\u570b\u5b98\u65b9\u53ca\u7b2c\u4e09\u65b9\u5929\u6c23\u8cc7\u6599\u4f86\u6e90\u3002"
+        }
+      }
+    }
+  ],
+  "packages": {
+    "org.breezyweather": [
+      {
+        "added": 1753286898000,
+        "apkName": "breezy-weather-v6.0.4-alpha_freenet.apk",
+        "hash": "0f030e7feb456e96c8d9dc17d66c72cbe3cb7636c3dbf595146908e175b50f3e",
+        "hashType": "sha256",
+        "minSdkVersion": 21,
+        "nativecode": [
+          "arm64-v8a",
+          "armeabi-v7a",
+          "x86",
+          "x86_64"
+        ],
+        "packageName": "org.breezyweather",
+        "sig": "688802048f64d92faa490892a23d802c",
+        "signer": "29d435f70aa9aec3c1faff7f7ffa6e15785088d87f06ecfcab9c3cc62dc269d8",
+        "size": 14078814,
+        "targetSdkVersion": 36,
+        "uses-permission": [
+          [
+            "android.permission.ACCESS_FINE_LOCATION",
+            null
+          ],
+          [
+            "android.permission.ACCESS_COARSE_LOCATION",
+            null
+          ],
+          [
+            "android.permission.ACCESS_BACKGROUND_LOCATION",
+            null
+          ],
+          [
+            "android.permission.READ_EXTERNAL_STORAGE",
+            32
+          ],
+          [
+            "android.permission.FOREGROUND_SERVICE",
+            null
+          ],
+          [
+            "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS",
+            null
+          ],
+          [
+            "android.permission.ACCESS_NETWORK_STATE",
+            null
+          ],
+          [
+            "android.permission.ACCESS_WIFI_STATE",
+            null
+          ],
+          [
+            "android.permission.INTERNET",
+            null
+          ],
+          [
+            "android.permission.RECEIVE_BOOT_COMPLETED",
+            null
+          ],
+          [
+            "com.android.alarm.permission.SET_ALARM",
+            null
+          ],
+          [
+            "android.permission.EXPAND_STATUS_BAR",
+            null
+          ],
+          [
+            "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+            null
+          ],
+          [
+            "android.permission.POST_NOTIFICATIONS",
+            null
+          ],
+          [
+            "android.permission.READ_APP_SPECIFIC_LOCALES",
+            null
+          ],
+          [
+            "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+            null
+          ],
+          [
+            "android.permission.WAKE_LOCK",
+            null
+          ],
+          [
+            "org.breezyweather.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 60004,
+        "versionName": "6.0.4-alpha_freenet"
+      },
+      {
+        "added": 1750581409000,
+        "apkName": "breezy-weather-v5.4.8_freenet.apk",
+        "hash": "04a8fb81bee064c8945de105e7b7ba493fc02635655c1541bd96c7c17f1b9bf9",
+        "hashType": "sha256",
+        "minSdkVersion": 21,
+        "nativecode": [
+          "arm64-v8a",
+          "armeabi-v7a",
+          "x86",
+          "x86_64"
+        ],
+        "packageName": "org.breezyweather",
+        "sig": "688802048f64d92faa490892a23d802c",
+        "signer": "29d435f70aa9aec3c1faff7f7ffa6e15785088d87f06ecfcab9c3cc62dc269d8",
+        "size": 13681204,
+        "targetSdkVersion": 36,
+        "uses-permission": [
+          [
+            "android.permission.ACCESS_FINE_LOCATION",
+            null
+          ],
+          [
+            "android.permission.ACCESS_COARSE_LOCATION",
+            null
+          ],
+          [
+            "android.permission.ACCESS_BACKGROUND_LOCATION",
+            null
+          ],
+          [
+            "android.permission.READ_EXTERNAL_STORAGE",
+            32
+          ],
+          [
+            "android.permission.FOREGROUND_SERVICE",
+            null
+          ],
+          [
+            "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS",
+            null
+          ],
+          [
+            "android.permission.ACCESS_NETWORK_STATE",
+            null
+          ],
+          [
+            "android.permission.ACCESS_WIFI_STATE",
+            null
+          ],
+          [
+            "android.permission.INTERNET",
+            null
+          ],
+          [
+            "android.permission.RECEIVE_BOOT_COMPLETED",
+            null
+          ],
+          [
+            "com.android.alarm.permission.SET_ALARM",
+            null
+          ],
+          [
+            "android.permission.EXPAND_STATUS_BAR",
+            null
+          ],
+          [
+            "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+            null
+          ],
+          [
+            "android.permission.POST_NOTIFICATIONS",
+            null
+          ],
+          [
+            "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+            null
+          ],
+          [
+            "android.permission.WAKE_LOCK",
+            null
+          ],
+          [
+            "org.breezyweather.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 50408,
+        "versionName": "5.4.8_freenet"
+      }
+    ]
+  }
+}

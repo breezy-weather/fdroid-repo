@@ -1,0 +1,35 @@
+{
+  "/etc/issue.net": "Debian GNU/Linux 13",
+  "antiFeatures": {},
+  "apksigner": "/usr/bin/apksigner",
+  "archivePolicy0": [],
+  "commandLine": [
+    "/usr/bin/fdroid update",
+    "--pretty",
+    "--delete-unknown",
+    "--use-date-from-apk"
+  ],
+  "disabled": [],
+  "endTimestamp": 1753495069665,
+  "failedBuilds": {},
+  "jarsigner": "/usr/lib/jvm/default-java/bin/jarsigner",
+  "keytool": "/usr/lib/jvm/default-java/bin/keytool",
+  "needsUpdate": [],
+  "noPackages": [
+    "org.breezyweather"
+  ],
+  "noUpdateCheck": [
+    "org.breezyweather"
+  ],
+  "stages": {
+    "delete_disabled_builds": 1753495064489,
+    "index.make repo": 1753495066823,
+    "prepare_apps repo": 1753495066818,
+    "process_apks": 1753495064490,
+    "read_added_date_from_all_apks": 1753495066818,
+    "remove_apks": 1753495066817,
+    "scan_repo_files": 1753495066817
+  },
+  "startTimestamp": 1753495064000,
+  "subcommand": "update"
+}

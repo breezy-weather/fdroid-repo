@@ -1,0 +1,14 @@
+AuthorName: breezy-weather
+Categories:
+    - Internet
+CurrentVersion: v6.0.12
+CurrentVersionCode: 60012
+IssueTracker: https://github.com/breezy-weather/breezy-weather/issues
+License: LGPL-3.0-only
+Name: Breezy Weather
+SourceCode: https://github.com/breezy-weather/breezy-weather
+WebSite: https://github.com/breezy-weather/breezy-weather
+Changelog: https://github.com/breezy-weather/breezy-weather/blob/main/CHANGELOG.md
+Translation: https://hosted.weblate.org/projects/breezy-weather/breezy-weather-android/#information
+
+AllowedAPKSigningKeys: 29d435f70aa9aec3c1faff7f7ffa6e15785088d87f06ecfcab9c3cc62dc269d8

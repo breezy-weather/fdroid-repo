@@ -1,0 +1,47 @@
+Breezy Weather est une application météo gratuite et libre en Material 3 Expressive avec des visualisations bien pensées, prenant en charge les prévisions, les conditions météorologiques en temps réel, les prévisions immédiates, la qualité de l'air, le pollen, les alertes, à partir de plus de 50 sources météorologiques, telles que Météo-France, Atmo, ECCC, MeteoLux et Open-Meteo.
+
+<b>Fonctionnalités</b>
+
+- Prévisions quotidiennes et horaires jusqu’à un maximum de 16 jours
+- Précipitations dans l’heure à venir
+- Conditions météorologiques en temps réel
+- Informations sur la qualité de l’air, les allergènes et l’éphéméride
+- Vigilances météo et alertes de précipitations
+- Partage sur demande des données avec d’autres applications (comme Gadgetbridge)
+- Accessibilité pour les lecteurs d’écran et pour d’autres localisations
+
+<b>Design</b>
+
+- Material 3 Expressive
+- Graphiques sur 24 heures détaillés
+- Thème sombre automatique
+- Packs d’icônes personnalisées
+- Large sélection de widgets
+- Fond d’écrans animés
+
+<b>Sources</b>
+
+- Toutes versions : Open-Meteo, ANAM-BF, Bright Sky (DWD), DCCMS, DMN, DWR, EMI, FOSS Public Alert Server, GMet, IGEBU, INM, Mali-Météo, Météo Benin, Météo Tchad, Météo Togo, Mettelsat, MSD, Pirate Weather, Recosanté, SMA (Seychelles), SMA (Sudan), SSMS
+- Sites non libres/auto-hébergeables (non inclues dans les versions avec suffixe _freenet) : AccuWeather, AEMET, Atmo Auvergne-Rhône-Alpes, Atmo France, ATMO GrandEst, Atmo Hauts-de-France, AtmoSud, Baidu IP location, BMD, BMKG, CWA, DMI, ECCC, EKUK, EPD (Hong Kong), GeoNames, GeoSphere AT, HERE, HKO, Ilmateenistus, IMD, IMS, IP.SB, IPMA, LHMT, LVĢMC, JMA, MET Éireann, MET Norway, Met Office UK, Meteo AM, Météo-France, MeteoLux, MGM, Mix de sources pour la Chine, NAMEM, NCDR, NCEI, NLSC, NWS, OpenWeather, PAGASA, SMG, Veðurstofa Íslands, OMM Centre d’Information des Phénomènes Dangereux
+
+<b>Permissions</b>
+
+Obligatoires :
+
+- Réseau (ACCESS_NETWORK_STATE, ACCESS_WIFI_STATE, INTERNET) : récupérer des données météo depuis des sources sur Internet
+
+Facultatives :
+
+- Services en arrière-plan (RECEIVE_BOOT_COMPLETED, WAKE_LOCK, SET_ALARM, FOREGROUND_SERVICE, FOREGROUND_SERVICE_DATA_SYNC, FOREGROUND_SERVICE_SPECIAL_USE) : mises à jour météo en arrière-plan et notifications programmées des prévisions
+- Ignorer l’optimisation de la batterie (REQUEST_IGNORE_BATTERY_OPTIMIZATIONS) : aide à empêcher l’application d’être tuée en arrière-plan sur certains appareils
+- Envoyer des notification (POST_NOTIFICATIONS) : vigilances, précipitations, prévisions du jour/lendemain, notification-widget, avancement des mises à jour en arrière-plan, etc
+- Localisation (ACCESS_COARSE_LOCATION, ACCESS_FINE_LOCATION, ACCESS_BACKGROUND_LOCATION) : pour afficher la météo pour votre position actuelle
+- Stockage (READ_EXTERNAL_STORAGE, WRITE_EXTERNAL_STORAGE) : permet à l’application de définir le fond d’écran animé et/ou les widgets sur certains appareils
+- Icône système (EXPAND_STATUS_BAR) : permet de lancer l’application depuis les paramètres rapides
+- Langue spécifique pour l’appli (READ_APP_SPECIFIC_LOCALES): permet de sauvegarder une langue spécifique pour l’appli et lire sa valeur après un redémarrage pour certains appareils
+
+<b>Licence</b>
+
+- GNU Lesser General Public License v3.0
+- This License does not grant any rights in the trademarks, service marks, or logos of any Contributor.
+- Misrepresentation of the origin of that material is prohibited, and modified versions of such material must be marked in reasonable ways as different from the original version.

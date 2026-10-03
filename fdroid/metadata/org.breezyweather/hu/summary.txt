@@ -1,0 +1,1 @@
+Funkciógazdag időjárás-alkalmazás, átlátható felülettel és számos adatforrással.
